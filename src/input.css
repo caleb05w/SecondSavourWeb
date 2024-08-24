@@ -1,3 +1,53 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+
+p {
+    font-size: 21vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 750;
+    font-style: normal;
+    line-height: 0.8;
+    letter-spacing: -.01em;
+    color: #F15B40;
+
+}
+
+p#little {
+    font-size: 5vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 0.8;
+    color: #F15B40;
+
+}
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 2.3vw;
+    line-height: 0.95;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.3vw;
+    line-height: 0.95;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.05vw;
+    line-height: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+

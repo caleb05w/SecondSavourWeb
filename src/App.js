@@ -1,25 +1,26 @@
 // import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-//pages
-import Home from './Pages/Home.js';
-import About from './Pages/About.js'
 
-//Components
+import Footer from './Components/Footer.js'
 import Navbar from './Components/Navbar.js'
+
+
+import AnimatedRoutes from "./Components/AnimatedRoutes.js";
 
 function App() {
   return (
     <div className="App">
+     {/* <link rel="stylesheet" href="//input.css"></link> */}
     <Router>
-      {/* <Navbar /> */}
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/about' element={<About />} />
-      </Routes>
+      <Navbar />
+        <AnimatedRoutes />
+        <Footer />
     </Router>
     </div>
   );
 }
 
 export default App;
+
+
