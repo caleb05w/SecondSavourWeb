@@ -22,7 +22,7 @@ const location = useLocation();
   return (
     <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-        <Route exact path='/' element={<Home />} />
+        <Route exact path='/' element={<Blog />} />
         <Route exact path='/about' element={<About />} />
         <Route exact path='/blog' element={<Blog />} />
         <Route exact path='/blogPage' element={<BlogPage />} />

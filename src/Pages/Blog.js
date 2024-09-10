@@ -21,7 +21,7 @@ function Blog() {
             <h1 className='mt-[2%]'> Citrus Candies </h1>
             <h3 className='mt-[2%] w-[80%]'>Nutritious, vitamin-filled, citrus delicacies hand-made from repurposed juiced oranges. Made to enjoy in class, on a drive, during study sessions, basically anywhere!</h3>
 
-            <div className='mt-[12%] rounded-full py-[1%] px-[3%] w-fit border border-black'>
+            <div className='group mt-[12%] rounded-full py-[1%] px-[3%] w-fit border border-black group-hover: cursor-pointer'>
                 <h2> Read Here </h2>
             </div>
         </div>
