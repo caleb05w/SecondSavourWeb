@@ -13,6 +13,7 @@ function Home() {
 
       <div className="border-2 border-black w-[80%] m-auto">
         <h1 className='text-center'> What we strive to do</h1>
+        <h1> Alll </h1>
       </div>
     </div>
 )
