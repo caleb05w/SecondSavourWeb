@@ -8,6 +8,7 @@ import Home from '../Pages/Home.js'
 import About from '../Pages/About.js'
 import Blog from '../Pages/Blog.js'
 import BlogPage from '../Pages/BlogPage.js'
+import Test from '../Pages/test.js'
 
 
 //Componnets
@@ -26,6 +27,7 @@ const location = useLocation();
         <Route exact path='/about' element={<About />} />
         <Route exact path='/blog' element={<Blog />} />
         <Route exact path='/blogPage' element={<BlogPage />} />
+        <Route exact path='/test' element={<Test />} />
 
         </Routes>
     </AnimatePresence>
