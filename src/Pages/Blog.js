@@ -3,6 +3,7 @@ import lemon from '../assets/lemon_man.png'
 import test from '../assets/images/blog_Test.png'
 import test2 from '../assets/images/b2.png'
 import test3 from '../assets/images/b3.png'
+import BlogPage from './BlogPage'
 
 import BlogThumbnail from '../Components/BlogThumbnail'
 
@@ -22,7 +23,7 @@ function Blog() {
             <h3 className='mt-[2%] w-[80%]'>Nutritious, vitamin-filled, citrus delicacies hand-made from repurposed juiced oranges. Made to enjoy in class, on a drive, during study sessions, basically anywhere!</h3>
 
             <div className='group mt-[12%] rounded-full py-[1%] px-[3%] w-fit border border-black group-hover: cursor-pointer'>
-                <h2> Read Here </h2>
+                <a href='Blogpage'><h2> Read Here </h2></a>
             </div>
         </div>
 
