@@ -13,6 +13,7 @@ import BlogPage from '../Pages/BlogPage.js'
 //Componnets
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar.js";
+import Shop from '../Pages/Shop.js'
 
 
 
@@ -26,6 +27,8 @@ const location = useLocation();
         <Route exact path='/about' element={<About />} />
         <Route exact path='/blog' element={<Blog />} />
         <Route exact path='/blogPage' element={<BlogPage />} />
+        <Route exact path='/shop' element={<Shop />} />
+
 
         </Routes>
     </AnimatePresence>
