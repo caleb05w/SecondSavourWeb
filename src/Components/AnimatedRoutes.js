@@ -8,12 +8,14 @@ import Home from '../Pages/Home.js'
 import About from '../Pages/About.js'
 import Blog from '../Pages/Blog.js'
 import BlogPage from '../Pages/BlogPage.js'
+import Map from '../Pages/Map.js'
+import Shop from '../Pages/Shop.js'
+
 
 
 //Componnets
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar.js";
-import Shop from '../Pages/Shop.js'
 
 
 
@@ -28,6 +30,8 @@ const location = useLocation();
         <Route exact path='/blog' element={<Blog />} />
         <Route exact path='/blogPage' element={<BlogPage />} />
         <Route exact path='/shop' element={<Shop />} />
+        <Route exact path='/map' element={<Map />} />
+
 
 
         </Routes>

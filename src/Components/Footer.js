@@ -3,30 +3,48 @@ import React from 'react'
 
 function Footer() {
 return ( 
-<div className='pt-[5%] pb-[1%] bg-[#FFF5DB] overflow-hidden'>
+<div className='w-[90%] m-auto'>
+        <nav className='min-h-[15rem]'>
+                <div className='border-t-2 border-gray-600 py-[1%] mt-[8%]'></div>
 
-    
-        <div className='mt-[2%] mx-[5%] flex justify-between'>
-        <a href="/"><h2> Our Products </h2></a>
-        <a href="/"><h2> Our Story </h2></a>
-        <a href="/"><h2> Our Blog </h2></a>
-        <a href="/"><h2> Instagram </h2></a>
-        <a href="/"><h2> Linkedin </h2></a>
-        <a href="/"><h2> Privacy Policy </h2></a>
-        <a href="/"><h2> @Second Savor 2024 -- All Rights Reserved </h2></a>
-        </div>
+                <div className='flex flex-row gap-[5%]'>
 
-        <div className='border-black border-t-2 mx-[5%] my-[2%]'> </div>
+                        <div className='flex flex-col gap-[0.5rem]'>
+                                <h3 className='text-gray-600'>Company</h3>
+                                <div className='flex flex-col gap-[0.2rem]'>
+                                        <a href='/about'><h3> About Us</h3></a>
+                                        <a href='/blog'><h3> Our Blog</h3> </a>
+                                        <a href='/about'><h3> Contact Us</h3> </a>
+                                </div>
+                        </div>
 
-        <div className='mx-[5%] flex justify-between '>
+                        <div className='flex flex-col gap-[0.5rem]'>
+                                <h3 className='text-gray-600'>Socials</h3>
+                                <div className='flex flex-col gap-[0.2rem]'>
+                                        <a href='/about'><h3> TikTok</h3></a>
+                                        <a href='/blog'><h3> Linkedin</h3> </a>
+                                        <a href='/about'><h3> Facebook</h3> </a>
+                                </div>
+                        </div>
 
-        <h2> Savor the flavour. </h2>
-        <div className='w-[30%]'><h2 className='text-right'> Nutritious, vitamin-filled, citrus delicacies hand-made from freshly repurposed juiced oranges.</h2></div>
-        </div>
+                        <div className='flex flex-col gap-[0.5rem]'>
+                                <h3 className='text-gray-600'>Other</h3>
+                                <div className='flex flex-col gap-[0.2rem]'>
+                                        <a href='/about'><h3> Privacy Policy</h3></a>
+                                        <a href='/blog'><h3> Terms of Service</h3> </a>
+                                </div>
+                        </div>
 
-        <p id='little' className='mx-[5%] mt-[12%]'> SECOND </p>
-        <div className=''> <p className='mx-[5%] mt-[1%] '> SAVOUR </p> </div>
+                        <div className='text-gray-600 text-right absolute right-[5%]'>
+                                <h3> Website Built and Designed</h3>
+                                <h3> By The Second Savour Team </h3>
+                        </div>
+                </div>
+        </nav>
 
+        <h3> Savour the Flavour </h3>
+        <h1> Second Savour </h1>
+        
 </div>
 )
 }

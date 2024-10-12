@@ -1,13 +1,13 @@
 import React from 'react'
 import Segment from '../Components/Segment.js'
-import Boothing from '../assets/images/boothing.png'
+import Boxes from '../assets/images/boxes.png'
 
 function Map() {
 return (
     <div className='w-[100%] bg-[#FEF7E6] flex justify-center'>
-            <div className='flex flex-col gap-[5lvh] min-h-fit border-orange-400 border-5 text-center pt-[13%] w-[90%]'>
+            <div className='flex flex-col gap-[10vh] min-h-fit text-center pt-[10%] w-[90%]'>
                             
-                    <div className='container'>
+                    <div className='m-w-lvw'>
                             <h1> Where to Find Us </h1>
                             <h3 className='mt-[1%]'> Visit us in person </h3>
                     </div>
@@ -17,10 +17,11 @@ return (
                     </div>
 
                     <Segment
-                    header = {"In Person Sales"}
-                    Title = {"Visit Us In Person"}
-                    Text = {"We create our product using eco-friendly resources, offering sustainable food products."}
-                    Image = {Boothing}
+                    header = {"Check our our virtual selection"}
+                    Title = {"Order Online"}
+                    Text = {"At Second Savour, we're expanding our sustainability initiatives to engage people outside of our communities.  Join us in making a positive impact on our planet!"}
+                    ButtonText = {"Browse Products"}
+                    Image = {Boxes}
                     />
             </div>
         
