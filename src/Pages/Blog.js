@@ -3,7 +3,7 @@ import lemon from '../assets/lemon_man.png'
 import test from '../assets/images/blog_Test.png'
 import test2 from '../assets/images/b2.png'
 import test3 from '../assets/images/b3.png'
-import BlogPage from './BlogPage'
+// import BlogPage from './BlogPage'
 
 import BlogThumbnail from '../Components/BlogThumbnail'
 
