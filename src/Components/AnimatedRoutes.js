@@ -10,6 +10,7 @@ import About from '../Pages/About.js'
 // import BlogPage from '../Pages/BlogPage.js'
 import Map from '../Pages/Map.js'
 import Shop from '../Pages/Shop.js'
+import Checkout from '../Pages/Checkout.js'
 
 
 
@@ -31,6 +32,7 @@ const location = useLocation();
         <Route exact path='/blogPage' element={<BlogPage />} /> */}
         <Route exact path='/shop' element={<Shop />} />
         <Route exact path='/map' element={<Map />} />
+        <Route exact path='/checkout' element={<Checkout />} />
 
 
 

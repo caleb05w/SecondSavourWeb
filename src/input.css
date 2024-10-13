@@ -5,12 +5,18 @@
 html {
     background-color: #FEF7E6;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 p {
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-style: normal;
-    line-height: 2vh;
+    line-height: 1.2rem;
 }
 
 p#little {
@@ -28,7 +34,7 @@ h1 {
     font-weight: 800;
     letter-spacing: 2px;
     font-size: 6.3vw;
-    line-height: 11vh;
+    line-height: 4rem;
 }
 
 h2 {
