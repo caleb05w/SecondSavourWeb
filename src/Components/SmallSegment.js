@@ -2,7 +2,7 @@ import React from 'react'
 import Boxes from '../assets/images/boxes.png'
 import Button from '../Components/Button.js'
 
-function SmallSegment({header, Title, Text,  Image, ButtonText}) {
+function SmallSegment({header, Title, Text,  Image, ButtonText, clickTo}) {
   return (
     <div className='max-w-[100%]'>
 
@@ -17,7 +17,10 @@ function SmallSegment({header, Title, Text,  Image, ButtonText}) {
                         <img className='m-auto'src={Image}></img>
                     </div>
 
-                    <Button text={ButtonText} />
+                    <Button 
+                    text={ButtonText}
+                    clickTo={clickTo} 
+                    />
 
                 </div>
             

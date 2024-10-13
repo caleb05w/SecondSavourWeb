@@ -15,8 +15,8 @@ return (
                                     <h3 className='mt-[1%]'> Filler filler body </h3>
                             </div>
                         <div className='flex gap-[1%]'>
-                            <Container Title='Citrus Candies' Description='Our delicious citrus candies are made from the finest ingredients. They are perfect for any occasion and are sure to be a hit with your friends and family.' Image={CitrusCandie} BGColor={"#E7D9BF"} />
-                            <Container Title='Coming Soon' Description='Stay tuned! We’re working hard to expand our product line outside of Citrus Treats.' Image={Boxes} BGColor={"#0D6A3D"} />
+                            <Container Title='Citrus Candies' Description='Our delicious citrus candies are made from the finest ingredients. They are perfect for any occasion and are sure to be a hit with your friends and family.' Image={CitrusCandie} BGColor={"#E7D9BF" }ButtonText={"View Product"} clickTo={"/Checkout"} />
+                            <Container Title='Coming Soon' Description='Stay tuned! We’re working hard to expand our product line outside of Citrus Treats.' Image={Boxes} BGColor={"#0D6A3D"} ButtonText={"Stay Updated!"} clickTo={"/shop"} />
                         </div>
 
                         <Segment
@@ -25,6 +25,7 @@ return (
                         Text = {"We create our product using eco-friendly resources, offering sustainable food products."}
                         ButtonText = {"View Locations"}
                         Image = {Boothing}
+                        clickTo={'/map'}
                          />
                     </div>
         

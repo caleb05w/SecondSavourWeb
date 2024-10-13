@@ -2,7 +2,7 @@ import React from 'react'
 import Boxes from '../assets/images/boxes.png'
 import Button from '../Components/Button.js'
 
-function Segment({header, Title, Text,  Image, ButtonText}) {
+function Segment({header, Title, Text,  Image, ButtonText, clickTo}) {
   return (
     <div className=''>
 
@@ -14,7 +14,10 @@ function Segment({header, Title, Text,  Image, ButtonText}) {
                     <h1> {Title} </h1>
                     <p> {Text} </p>
 
-                    <Button text={ButtonText} />
+                    <Button 
+                    text={ButtonText} 
+                    clickTo={clickTo}
+                    />
 
                 </div>
                     <div className='relative top-10 hover:top-5 ease-in-out duration-300 max-w-[50%]'>

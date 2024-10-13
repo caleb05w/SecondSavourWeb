@@ -22,6 +22,7 @@ return (
                     Text = {"At Second Savour, we're expanding our sustainability initiatives to engage people outside of our communities.  Join us in making a positive impact on our planet!"}
                     ButtonText = {"Browse Products"}
                     Image = {Boxes}
+                    clickTo={'/shop'}
                     />
             </div>
         
