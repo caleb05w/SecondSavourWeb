@@ -1,72 +1,90 @@
-import React from 'react'
-import '../output.css'
-import '../input.css' //<-- Tailwind stylesheet
-import lemonMan from '../assets/lemon_man.png'
-import gloriousPM from '../assets/images/gloriousPM.jpg'
-import justin from '../assets/images/justin.png'
-import justin2 from '../assets/images/justin2.png'
-import justin3 from '../assets/images/justin3.png'
-
+import React from 'react';
+import '../output.css';
+import '../input.css'; // Tailwind stylesheet
+import lemonMan from '../assets/lemon_man.png';
+import SmallSegment from '../Components/SmallSegment.js';
+import Boxes from '../assets/images/boxes.png'
+import Boothing from '../assets/images/boothing.png'
+import New1 from '../assets/images/NewSticker.png'
+import Packages from '../assets/images/Group742.png'
+import Button from '../Components/Button.js'
 
 function Home() {
   return (
-    <div className='bg-yellow-100'> 
+    <div className='w-100% bg-[#FEF7E6] flex justify-center'>
 
-      <div className="border-2 border-black w-[80%] m-auto">
-        <h1 className='text-center'>Second Savour</h1>
-        <h4 className='text-center'>Body copy, and importing tag line</h4>
+      <div className='flex flex-col gap-[10vh] min-h-fit pt-[10%] w-[90%]'>
+
+      {/* Header Section */}
+      <div className="p-[2%]">
+        <h1 className='text-center font-bold'>SECOND SAVOUR</h1>
+        <h4 className='text-center mt-[1%]'>Body copy, and importing tag linea</h4>
       </div>
 
-      <div className='mt-[4%] w-[80%] p-[2%] bg-green-800 text-white flex m-auto border-2 rounded-2xl'>
+      {/* Citrus Candies Section */}
+      <div className='mt-[2%] p-[2%] bg-green-800 flex border-2 rounded-2xl'>
         <div className='w-[40%]'>
-          <h2>New!(Img)</h2>
-          <h1 className='mt-[5%] font-bold'>Citrus Candies asdf</h1>
-          <h4 className='mt-[3%] font-bold'>7.99 Per Package</h4>
-          <h4 className='mt-[3%] font-bold'>Nutritious vitamin-filled, citrus delicacies hand-made from repurposed juiced oranges. Made to enjoy in class, on a drive, during study sessions, basically anywhere!</h4>
+          
+          <img src={New1}/>
 
-          <div className='mt-[5%] border-2 border-black w-[30%] h-[15%] rounded-md'>Check it out! --{'>'}</div>
-        </div>
-        <div className='w-[60%}'>
-          <img src={lemonMan}/>
-        </div>
-      </div>
-
-      <div className='mt-[2%] w-[80%] m-auto flex'>
-        
-        <div className='w-[33%] p-[3%] border-2'>
-          <h1>44 kg+</h1>
-          <h4>Of surplus and imperfect produce from waste reduced in the last month</h4>
-        </div>
-
-        <div className='w-[33%] p-[3%] border-2'>
-          <h1>44 kg+</h1>
-          <h4>Packages  donated in the last year to raise awareness</h4>
-        </div>
-
-        <div className='w-[33%] p-[3%] border-2'>
-          <h1>44 kg+</h1>
-          <h4>Packages donated in the last year to raise awareness</h4>
-        </div>
-      </div>
-
-      <div className='mt-[2%] w-[80%] p-[2%] m-auto flex gap-x-[2%] border-2'>
-        <div className='border-2'>
-          <div className='w-[90%] border-2 border-black'>
-            <h1>In Person</h1>
-            <h4>We create our products using eco-friendly resources, offering sustainble food products</h4>
+          <h1 className='mt-[2%] font-bold text-white'>Citrus Candies</h1>
+          <h4 className='mt-[2%] text-2xl font-bold text-white'>7.99 Per Package</h4>
+          <p className='mt-[2%] text-white'>
+            Nutritious, vitamin-filled, citrus delicacies hand-made from repurposed juiced oranges. Made to enjoy in class, on a drive, during study sessions - basically anywhere!
+          </p>
+          
+          <div className='mt-[4%]'>
+          <Button
+              text={"Check it out!"}
+          />
           </div>
         </div>
 
-        <div className='border-2'>
-          <div className='w-[90%] border-2 border-black'>
-            <h1>Shop Online</h1>
-            <h4>We create our products using eco-friendly resources, offering sustainable food products.</h4>
-          </div>
+        <div className='w-[60%] flex justify-center'>
+          <img src={Packages} alt="Packages" className='max-w-full' />
         </div>
       </div>
 
+      {/* Stats Section */}
+      <div className='mt-[2%] flex justify-between'>
+        <div className='w-[30%] p-4 border-2'>
+          <h2 className='text-8xl font-bold'>44 kg+</h2>
+          <p>Of surplus and imperfect produce saved from waste last month</p>
+        </div>
+        <div className='w-[30%] p-4 border-2'>
+          <h2 className='text-8xl font-bold'>100+</h2>
+          <p>Packages donated last year to raise awareness</p>
+        </div>
+        <div className='w-[30%] p-4 border-2'>
+          <h2 className='text-8xl font-bold'>200+</h2>
+          <p>Packages donated in the last year to raise awareness</p>
+        </div>
+      </div>
+
+      <div className='flex flex-wrap mt-[2%] justify-between gap-[1%]'>
+                                
+                                <div className='w-full md:w-[48%] h-auto mb-8'>
+                                <SmallSegment
+                                Title = {"Order Online"}
+                                Text = {"At Second Savour, we're expanding our sustainability initiatives to engage people outside of our communities.  Join us in making a positive impact on our planet!"}
+                                ButtonText = {"Browse Products"}
+                                Image = {Boxes}
+                                />
+                                </div>
+
+                                <div className='max-w-[50%] h-[50%]'>
+                                <SmallSegment
+                                Title = {"Visit our In Person Sales"}
+                                Text = {"We create our product using eco-friendly resources, offering sustainable food products."}
+                                ButtonText = {"View Locations"}
+                                Image 
+                                = {Boothing}
+                                 />
+                                 </div>
+                                </div>
+      </div>
     </div>
-)
+  );
 }
 
-export default Home
+export default Home;
