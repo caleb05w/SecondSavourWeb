@@ -5,7 +5,7 @@ import test2 from '../assets/images/b2.png'
 import test3 from '../assets/images/b3.png'
 // import BlogPage from './BlogPage'
 
-import BlogThumbnail from '../Components/BlogThumbnail'
+// import BlogThumbnail from '../Components/BlogThumbnail'
 
 function Blog() {
   return (
@@ -36,9 +36,9 @@ function Blog() {
     {/* Containers */}
     
     <div className='mx-[5%] flex gap-[1%] mt-[1%]'>
-        <BlogThumbnail Category='Category of Article' ReadTime='8 Minute Read' Title='How we make our Products' Description='How we make our candies and deliver them to your door. Two Sentence description of the contents of this article, and why it is exciting.' Author='Author' Date='Date' image={test} />
+        {/* <BlogThumbnail Category='Category of Article' ReadTime='8 Minute Read' Title='How we make our Products' Description='How we make our candies and deliver them to your door. Two Sentence description of the contents of this article, and why it is exciting.' Author='Author' Date='Date' image={test} />
         <BlogThumbnail Category='Category of Article' ReadTime='8 Minute Read' Title='How we make our Products' Description='How we make our candies and deliver them to your door. Two Sentence description of the contents of this article, and why it is exciting.' Author='Author' Date='Date' image={test2} />
-        <BlogThumbnail Category='Category of Article' ReadTime='8 Minute Read' Title='How we make our Products' Description='How we make our candies and deliver them to your door. Two Sentence description of the contents of this article, and why it is exciting.' Author='Author' Date='Date' image={test3} />
+        <BlogThumbnail Category='Category of Article' ReadTime='8 Minute Read' Title='How we make our Products' Description='How we make our candies and deliver them to your door. Two Sentence description of the contents of this article, and why it is exciting.' Author='Author' Date='Date' image={test3} /> */}
     </div>
 
     </div>
