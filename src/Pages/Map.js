@@ -5,7 +5,7 @@ import Boxes from '../assets/images/boxes.png'
 function Map() {
 return (
     <div className='w-[100%] bg-[#FEF7E6] flex justify-center'>
-            <div className='flex flex-col gap-[10vh] min-h-fit text-center pt-[10%] w-[90%]'>
+            <div className='flex flex-col gap-[3vh]  lg:gap-[10vh] min-h-fit text-center pt-[10%] w-[90%]'>
                             
                     <div className='m-w-lvw'>
                             <h1> Where to Find Us </h1>

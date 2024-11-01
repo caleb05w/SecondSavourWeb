@@ -7,7 +7,7 @@ return (
         <nav className='min-h-[15rem]'>
                 <div className='border-t-2 border-gray-600 py-[1%] mt-[8%]'></div>
 
-                <div className='flex flex-row gap-[5%]'>
+                <div className='flex flex-grow md:flex-grow lg:flex-row gap-[5vw] lg:gap-[5%]'>
 
                         <div className='flex flex-col gap-[0.5rem]'>
                                 <h3 className='text-gray-600'>Company</h3>
@@ -35,7 +35,7 @@ return (
                                 </div>
                         </div>
 
-                        <div className='text-gray-600 text-right absolute right-[10%]'>
+                        <div className='text-gray-600 lg:text-right text-center hidden lg:block lg:absolute lg:right-[5%]'>
                                 <h3> Website Built and Designed</h3>
                                 <h3> By The Second Savour Team </h3>
                         </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Profile from '../Components/Profile.js'
 import Caleb from '../assets/images/caleb.png'
 import Arianna from '../assets/images/Arianna.png'
@@ -11,6 +11,43 @@ import scroll3 from '../assets/images/scroll3.png'
 import { FaArrowRight } from "react-icons/fa";
 
 function About() {
+
+  //button code to change the content of team
+
+  const [selectImage, setSelectImage] = useState(
+
+      <div className='flex flex-row justify-between w-[100%]'>
+      <Profile
+      Name={'Caleb AAA Wu'}
+      Role={'Project Coordinator'}
+      Concentration={'SIAT x Beedie'}
+      Image={Caleb}
+      LinkedIn={'https://www.linkedin.com/in/caleb-wu1'}
+      Instagram={'https://www.instagram.com/caleb_wu_/'}
+      />
+
+      <Profile
+      Name={'Arianna Ha'}
+      Role={'VP Marketing'}
+      Concentration={'Beedie Concentration'}
+      Image={Arianna}
+      />
+
+      <Profile
+      Name={'Jessica Tandibrata'}
+      Role={'Events Coordinator'}
+      Concentration={'Beedie Concentration'}
+      Image={Jessica}
+      />  
+      </div>
+
+  
+  )
+
+const handleImage = (image) => {
+  setSelectImage(image);
+  }
+
   return (
     <div className='w-[100%] bg-[#FEF7E6] flex justify-center overflow-hidden'>
       <div className='flex flex-col gap-[15vh] min-h-fit border-orange-400 border-5 text-center pt-[9%] w-[90%]'>
@@ -39,38 +76,98 @@ function About() {
               </div>
 
             <div className='flex flex-col justify-between'>
-              <div className='flex flex-row h-[10%] justify-between w-[100%]'>
+              <div className='flex flex-row h-[10%] justify-between w-[100%] gap-[2%] mb-[2%]'>
 
-                    <button className='border-2 border-black'>hello </button>
-                    <button className='border-2 border-black'>hello </button>
-                    <button className='border-2 border-black'>hello </button>
+                    <button onClick={() => handleImage(
+
+                      <div className='flex flex-row justify-between w-[100%]'>
+                      <Profile
+                      Name={'Darren Lau'}
+                      Role={'Project Coordinator'}
+                      Concentration={'SIAT x Beedie'}
+                      Image={Caleb}
+                      LinkedIn={'https://www.linkedin.com/in/caleb-wu1'}
+                      Instagram={'https://www.instagram.com/caleb_wu_/'}
+                      />
+
+                      <Profile
+                      Name={'Gailza Wijaya'}
+                      Role={'VP Marketing'}
+                      Concentration={'Beedie Concentration'}
+                      Image={Arianna}
+                      />
+
+                      <Profile
+                      Name={'Jessica Tandibrata'}
+                      Role={'Events Coordinator'}
+                      Concentration={'Beedie Concentration'}
+                      Image={Jessica}
+                      />  
+                      </div>
+
+                    )}><p>Sales Team </p></button>
+                    
+                    <button onClick={() => handleImage(
+
+                          <div className='flex flex-row justify-between w-[100%]'>
+                          <Profile
+                          Name={'Caleb Wu'}
+                          Role={'Project Coordinator'}
+                          Concentration={'SIAT x Beedie'}
+                          Image={Caleb}
+                          LinkedIn={'https://www.linkedin.com/in/caleb-wu1'}
+                          Instagram={'https://www.instagram.com/caleb_wu_/'}
+                          />
+
+                          <Profile
+                          Name={'Arianna Ha'}
+                          Role={'VP Marketing'}
+                          Concentration={'Beedie Concentration'}
+                          Image={Arianna}
+                          />
+
+                          <Profile
+                          Name={'Jessica Tandibrata'}
+                          Role={'Events Coordinator'}
+                          Concentration={'Beedie Concentration'}
+                          Image={Jessica}
+                          />  
+                          </div>
+
+                      )}><p>Marketing Team </p></button>
+
+                        <button onClick={() => handleImage(
+
+                        <div className='flex flex-row justify-between w-[100%]'>
+                        <Profile
+                        Name={'Caleb AAA Wu'}
+                        Role={'Project Coordinator'}
+                        Concentration={'SIAT x Beedie'}
+                        Image={Caleb}
+                        LinkedIn={'https://www.linkedin.com/in/caleb-wu1'}
+                        Instagram={'https://www.instagram.com/caleb_wu_/'}
+                        />
+
+                        <Profile
+                        Name={'Arianna Ha'}
+                        Role={'VP Marketing'}
+                        Concentration={'Beedie Concentration'}
+                        Image={Arianna}
+                        />
+
+                        <Profile
+                        Name={'Jessica Tandibrata'}
+                        Role={'Events Coordinator'}
+                        Concentration={'Beedie Concentration'}
+                        Image={Jessica}
+                        />  
+                        </div>
+
+                      )}><p>Logistics Team </p></button>
 
                   </div>
               
-              <div className='flex flex-row justify-between w-[100%]'>
-                  <Profile
-                  Name={'Caleb Wu'}
-                  Role={'Project Coordinator'}
-                  Concentration={'SIAT x Beedie'}
-                  Image={Caleb}
-                  LinkedIn={'https://www.linkedin.com/in/caleb-wu1'}
-                  Instagram={'https://www.instagram.com/caleb_wu_/'}
-                  />
-
-                  <Profile
-                  Name={'Arianna Ha'}
-                  Role={'VP Marketing'}
-                  Concentration={'Beedie Concentration'}
-                  Image={Arianna}
-                  />
-
-                  <Profile
-                  Name={'Jessica Tandibrata'}
-                  Role={'Events Coordinator'}
-                  Concentration={'Beedie Concentration'}
-                  Image={Jessica}
-                  />  
-              </div>
+              <div> {selectImage} </div>
 
 
               </div>
@@ -119,16 +216,16 @@ function About() {
             </div>
 
             <div className='grid grid-cols-3 gap-[1%] mt-[3%]'>
-              <div className=' border-2 border-black min-h-[50vh] p-[2rem] rounded-[0.5rem] bg-[#F3892C] flex flex-col gap-[1rem]'>
+              <div className='  min-h-[50vh] p-[2rem] rounded-[0.5rem] bg-[#F3892C] flex flex-col gap-[1rem]'>
                 <h2> Substainability </h2>
-                <p>We create our products using eco-friendly resources, offering sustainable food products.</p>
+                <p>We create our vs using eco-friendly resources, offering sustainable food products.</p>
               </div>
 
-              <div className=' border-2 border-black min-h-[50vh] p-[2rem] rounded-[0.5rem] bg-[#0D6A3D] flex flex-col gap-[1rem]'>
+              <div className='  min-h-[50vh] p-[2rem] rounded-[0.5rem] bg-[#0D6A3D] flex flex-col gap-[1rem]'>
                 <h2> Engagement </h2>
                 <p>We aim to inspire and empower individuals to rethink food waste, motivating them to be part of the solution.</p>
               </div>
-              <div className=' border-2 border-black min-h-[50vh] p-[2rem] rounded-[0.5rem] bg-[#E7D9BF] flex flex-col gap-[1rem]'>
+              <div className='  min-h-[50vh] p-[2rem] rounded-[0.5rem] bg-[#E7D9BF] flex flex-col gap-[1rem]'>
                 <h2> Repurpose </h2>
                 <p>We repurpose surplus or unwanted produce into upcycled food products, reducing waste while raising awareness to address issues of hunger and inequality.</p>
               </div>

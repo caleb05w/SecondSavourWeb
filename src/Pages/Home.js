@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className='w-100% bg-[#FEF7E6] flex justify-center'>
 
-      <div className='flex flex-col gap-[10vh] min-h-fit pt-[10%] w-[90%]'>
+      <div className='flex flex-col gap-[10vh] min-h-fit pt-[7%] w-[90%]'>
 
       {/* Header Section */}
       <div className="p-[2%]">
