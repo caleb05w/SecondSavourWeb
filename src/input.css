@@ -28,8 +28,24 @@ p#little {
   color: #f15b40;
 }
 
+@font-face {
+  font-family: "Tanker-Regular-Regular";
+  src:
+    url("../fonts/Tanker-Regular-Regular.woff2") format("woff2"),
+    url("../fonts/Tanker-Regular-Regular.woff") format("woff"),
+    url("../fonts/Tanker-Regular-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Use the custom font */
+body {
+  font-family: "Tanker-Regular", sans-serif; /* 'sans-serif' as a fallback */
+}
+
 h1 {
-  font-family: "Tanker", sans-serif;
+  font-family: "Tanker-Regular", sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
   font-size: 6.3rem;
@@ -37,7 +53,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Tanker", sans-serif;
+  font-family: "Tanker-Regular", sans-serif;
   font-weight: 500;
   font-size: 3.4rem;
   line-height: 0.95;
