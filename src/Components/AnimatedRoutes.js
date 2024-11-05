@@ -11,6 +11,7 @@ import About from '../Pages/About.js'
 import Map from '../Pages/Map.js'
 import Shop from '../Pages/Shop.js'
 import Checkout from '../Pages/Checkout.js'
+import Impacts from "../Pages/Impacts.js";
 
 
 
@@ -33,6 +34,7 @@ const location = useLocation();
         <Route exact path='/shop' element={<Shop />} />
         <Route exact path='/map' element={<Map />} />
         <Route exact path='/checkout' element={<Checkout />} />
+        <Route exact path='/impacts' element={<Impacts/>} />
 
 
 

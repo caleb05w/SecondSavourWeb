@@ -23,7 +23,7 @@ function Home() {
 
         {/* Citrus Candies Section */}
         <div className="mt-[2%] p-[2%] bg-green-800 flex border-2 rounded-2xl">
-          <div className="w-[40%]">
+          <div className="text-center lg:w-[40%]">
             <img src={New1} />
 
             <h1 className="mt-[2%] font-bold text-white">Citrus Candies</h1>
@@ -49,15 +49,15 @@ function Home() {
         {/* Stats Section */}
         <div className="mt-[2%] flex justify-between">
           <div className="w-[30%] p-4 border-2">
-            <h2 className="text-8xl font-bold">44 kg+</h2>
+            <h2 className="text-2xl lg:text-8xl font-bold">44 kg+</h2>
             <p>Of surplus and imperfect produce saved from waste last month</p>
           </div>
           <div className="w-[30%] p-4 border-2">
-            <h2 className="text-8xl font-bold">100+</h2>
+            <h2 className="text-2xl lg:text-8xl font-bold">100+</h2>
             <p>Packages donated last year to raise awareness</p>
           </div>
           <div className="w-[30%] p-4 border-2">
-            <h2 className="text-8xl font-bold">200+</h2>
+            <h2 className="text-2xl lg:text-8xlfont-bold">200+</h2>
             <p>Packages donated in the last year to raise awareness</p>
           </div>
         </div>
@@ -84,6 +84,28 @@ function Home() {
               Image={Boothing}
             />
           </div>
+        </div>
+        <div className="border-t border-gray-300"></div>
+
+        <div className="flex">
+          <div className="w-[40%]">
+            <h1>Our Products</h1>
+            <p className="mt-[5%]">
+              Second Savour was founded by a group of friends at Simon Fraser
+              University (SFU) with a mission to create environmental change.
+            </p>
+          </div>
+
+          <div className="w-[60%]">{/* insert image */}</div>
+        </div>
+
+        <div className="border-t border-gray-300"></div>
+
+        <div>
+          <h1 className="text-center">JOIN THE MOVEMENT</h1>
+          <p className="text-gray-600 text-center mt-[2%]">
+            See what people are saying about our products
+          </p>
         </div>
       </div>
     </div>
