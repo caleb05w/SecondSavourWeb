@@ -33,7 +33,8 @@ function Navbar() {
       {/* mobile navbar */}
 
       <nav>
-        <div class="w-100  flex flex-row justify-center">
+        <div class="w-100  flex flex-col border-2 border-red justify-items-end">
+          <h3 className=" text-1xl border-2 border-red-300"> Second Savour </h3>
           <div className="lg:hidden md:hidden flex flex-row justify-center w-fit h-fit fixed pt-[5%] ease-in-out duration-300  z-10">
             <button
               onClick={() =>
@@ -74,9 +75,9 @@ function Navbar() {
                 )
               }
               // onClick={handleNavBar}
-              className="flex font-[Tanker] px-[1.7rem] py-[1rem] border-2 border-black w-fit text-black rounded-[0.5rem] gap-[1rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300 z-[50]"
+              className="flex font-[Tanker] px-[1rem] py-[1rem] border-2 border-black w-fit text-black rounded-[0.5rem] gap-[1rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300 z-[50]"
             >
-              <h3>Menu</h3>
+              {/* <h3>Menu</h3> */}
               <IoIosMenu />
             </button>
           </div>
