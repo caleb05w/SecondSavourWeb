@@ -23,23 +23,21 @@ export default function Impacts() {
                 stars
               </h5>
             </div>
-            {/* Stats Section */}
-            <div className="mt-[3%] flex justify-between">
-              <div className="w-[30%] p-[2%]">
-                <h2 className="text-8xl font-bold">44 kg+</h2>
-                <p>
-                  Of surplus and imperfect produce saved from waste last month
-                </p>
-              </div>
-              <div className="w-[30%] p-[2%]">
-                <h2 className="text-8xl font-bold">100+</h2>
-                <p>Packages donated last year to raise awareness</p>
-              </div>
-              <div className="w-[30%] p-[2%]">
-                <h2 className="text-8xl font-bold">200+</h2>
-                <p>Packages donated in the last year to raise awareness</p>
-              </div>
-            </div>
+        {/* Stats Section */}
+        <div className="mt-[2%] flex flex-col justify-between lg:flex-row">
+          <div className="lg:w-[30%] p-[3%]">
+            <h1 className="font-bold">44 kg+</h1>
+            <p className="mt-[3%]">Of surplus and imperfect produce saved from waste last month</p>
+          </div>
+          <div className="lg:w-[30%] p-[3%]">
+            <h1 className="font-bold">100+</h1>
+            <p className="mt-[3%]">Packages donated last year to raise awareness</p>
+          </div>
+          <div className="lg:w-[30%] p-[3%]">
+            <h1 className="font-bold">200+</h1>
+            <p className="mt-[3%]">Packages donated in the last year to raise awareness</p>
+          </div>
+        </div>
           </div>
 
           <div className="mt-[2%] flex">

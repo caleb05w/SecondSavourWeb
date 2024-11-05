@@ -22,14 +22,16 @@ function Home() {
         </div>
 
         {/* Citrus Candies Section */}
-        <div className="mt-[2%] p-[2%] bg-green-800 flex border-2 rounded-2xl">
+        <div className="mt-[2%] p-[2%] bg-green-800 flex flex-col border-2 rounded-2xl lg:flex-row md:flex-row">
           <div className="text-center lg:w-[40%]">
+            <div className="flex justify-center">
             <img src={New1} />
+            </div>
 
             <h1 className="mt-[2%] font-bold text-white">Citrus Candies</h1>
-            <h4 className="mt-[2%] text-2xl font-bold text-white">
+            <h3 className="mt-[2%] text-2xl font-bold text-white">
               7.99 Per Package
-            </h4>
+            </h3>
             <p className="mt-[2%] text-white">
               Nutritious, vitamin-filled, citrus delicacies hand-made from
               repurposed juiced oranges. Made to enjoy in class, on a drive,
@@ -41,24 +43,24 @@ function Home() {
             </div>
           </div>
 
-          <div className="w-[60%] flex justify-center">
+          <div className="mt-[3%] flex justify-center lg:mt-0 lg:w-[60%]">
             <img src={Packages} alt="Packages" className="max-w-full" />
           </div>
         </div>
 
         {/* Stats Section */}
-        <div className="mt-[2%] flex justify-between">
-          <div className="w-[30%] p-4 border-2">
-            <h2 className="text-2xl lg:text-8xl font-bold">44 kg+</h2>
-            <p>Of surplus and imperfect produce saved from waste last month</p>
+        <div className="mt-[2%] flex flex-col justify-between lg:flex-row">
+          <div className="lg:w-[30%] p-[3%]">
+            <h1 className="font-bold">44 kg+</h1>
+            <p className="mt-[3%]">Of surplus and imperfect produce saved from waste last month</p>
           </div>
-          <div className="w-[30%] p-4 border-2">
-            <h2 className="text-2xl lg:text-8xl font-bold">100+</h2>
-            <p>Packages donated last year to raise awareness</p>
+          <div className="lg:w-[30%] p-[3%]">
+            <h1 className="font-bold">100+</h1>
+            <p className="mt-[3%]">Packages donated last year to raise awareness</p>
           </div>
-          <div className="w-[30%] p-4 border-2">
-            <h2 className="text-2xl lg:text-8xlfont-bold">200+</h2>
-            <p>Packages donated in the last year to raise awareness</p>
+          <div className="lg:w-[30%] p-[3%]">
+            <h1 className="font-bold">200+</h1>
+            <p className="mt-[3%]">Packages donated in the last year to raise awareness</p>
           </div>
         </div>
 
@@ -74,7 +76,7 @@ function Home() {
             />
           </div>
 
-          <div className="max-w-[50%] h-[50%]">
+          <div className="lg:max-w-[50%] h-[50%]">
             <SmallSegment
               Title={"Visit our In Person Sales"}
               Text={
@@ -88,7 +90,7 @@ function Home() {
         <div className="border-t border-gray-300"></div>
 
         <div className="flex">
-          <div className="w-[40%]">
+          <div className="lg:w-[40%]">
             <h1>Our Products</h1>
             <p className="mt-[5%]">
               Second Savour was founded by a group of friends at Simon Fraser
