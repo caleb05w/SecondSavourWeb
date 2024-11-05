@@ -25,7 +25,7 @@ function Home() {
         <div className="mt-[2%] p-[2%] bg-green-800 flex flex-col border-2 rounded-2xl lg:flex-row md:flex-row">
           <div className="text-center lg:w-[40%]">
             <div className="flex justify-center">
-            <img src={New1} />
+              <img src={New1} />
             </div>
 
             <h1 className="mt-[2%] font-bold text-white">Citrus Candies</h1>
@@ -39,7 +39,7 @@ function Home() {
             </p>
 
             <div className="mt-[4%]">
-              <Button text={"Check it out!"} />
+              <Button text={"Check it out!"} clickTo={"/Shop"} />
             </div>
           </div>
 
@@ -52,15 +52,21 @@ function Home() {
         <div className="mt-[2%] flex flex-col justify-between lg:flex-row">
           <div className="lg:w-[30%] p-[3%]">
             <h1 className="font-bold">44 kg+</h1>
-            <p className="mt-[3%]">Of surplus and imperfect produce saved from waste last month</p>
+            <p className="mt-[3%]">
+              Of surplus and imperfect produce saved from waste last month
+            </p>
           </div>
           <div className="lg:w-[30%] p-[3%]">
             <h1 className="font-bold">100+</h1>
-            <p className="mt-[3%]">Packages donated last year to raise awareness</p>
+            <p className="mt-[3%]">
+              Packages donated last year to raise awareness
+            </p>
           </div>
           <div className="lg:w-[30%] p-[3%]">
             <h1 className="font-bold">200+</h1>
-            <p className="mt-[3%]">Packages donated in the last year to raise awareness</p>
+            <p className="mt-[3%]">
+              Packages donated in the last year to raise awareness
+            </p>
           </div>
         </div>
 
@@ -73,10 +79,11 @@ function Home() {
               }
               ButtonText={"Browse Products"}
               Image={Boxes}
+              clickTo={"/Shop"}
             />
           </div>
 
-          <div className="lg:max-w-[50%] h-[50%]">
+          <div className="lg:max-w-[50%] md:max-w-[50%] w-[100%] h-[50%]">
             <SmallSegment
               Title={"Visit our In Person Sales"}
               Text={
@@ -84,6 +91,7 @@ function Home() {
               }
               ButtonText={"View Locations"}
               Image={Boothing}
+              clickTo={"/Map"}
             />
           </div>
         </div>
