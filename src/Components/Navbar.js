@@ -10,50 +10,57 @@ function Navbar() {
 
   return (
     <div className="w-[100%] sm:mt-[2%]">
-      <nav className="bg-transparent w-[100%] fixed z-20 lg:flex md:flex flex-row justify-center mx-auto hidden">
-        <div className="flex flex-row gap-[5%] w-fit justify-center whitespace-nowrap px-[3rem] py-[1rem] rounded-[0.5rem] bg-[#E7D9BF] shadow-lg">
-          <a href="/shop">
-            <h3 className="font-[Tanker] px-[1.7rem] py-[1rem] border-2 border-black w-fit text-black rounded-[0.5rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300">
-              Our Products
+      <nav className="bg-transparent w-[100%]  fixed z-20 lg:flex md:flex flex-row justify-center hidden">
+        <div className="flex flex-row w-[70%] justify-between whitespace-nowrap px-[3rem] py-[1rem] rounded-[999rem] bg-[#E7D9BF] border border-[#cbba9a] shadow-lg">
+          <a href="/">
+            <h3 className=" font-[Tanker] w-fit text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
+              Home
             </h3>
           </a>
-          <a href="/map">
-            <h3 className="font-[Tanker] px-[1.7rem] py-[1rem] border-2 border-black w-fit text-black rounded-[0.5rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300">
-              Our Locations
-            </h3>
-          </a>
-          <a href="/about">
-            <h3 className=" font-[Tanker] px-[1.7rem] py-[1rem] border-2 border-black w-fit text-black rounded-[0.5rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300">
-              About Us
-            </h3>
-          </a>
+          <div class=" flex flex-row gap-[1rem] w-fit">
+            <a href="/shop">
+              <h3 className="font-[Tanker] w-fit text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
+                Our Products
+              </h3>
+            </a>
+            <a href="/map">
+              <h3 className="font-[Tanker] w-fit text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
+                Our Locations
+              </h3>
+            </a>
+            <a href="/about">
+              <h3 className=" font-[Tanker] w-fit text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
+                About Us
+              </h3>
+            </a>
+          </div>
         </div>
       </nav>
 
       {/* mobile navbar */}
 
       <nav>
-        <div class="w-100  flex flex-col border-2 border-red justify-items-end">
-          <h3 className=" text-1xl border-2 border-red-300"> Second Savour </h3>
+        <div class="w-100  flex flex-col justify-items-end">
           <div className="lg:hidden md:hidden flex flex-row justify-center w-fit h-fit fixed pt-[5%] ease-in-out duration-300  z-10">
             <button
               onClick={() =>
                 handleNavBar(
                   <div className="flex h-full flex-row justify-center w-full f-full">
                     <div className=" w-[100%] flex flex-row justify-center p-[1rem] fixed z-40 top-[20vh]">
-                      <div className="flex flex-col gap-[1rem] min-w-[80%] justify-center whitespace-nowrap px-[1rem] py-[1rem] rounded-[0.5rem] bg-[#E7D9BF] shadow-lg">
+                      <div className="flex flex-col gap-[1rem] min-w-[80%] justify-center whitespace-nowrap rounded-[0.5rem] px-[1rem] py-[1rem] bg-[#E7D9BF] shadow-lg">
                         <a href="/shop">
-                          <h3 className="font-[Tanker] px-[1.7rem] py-[1rem] border-2 border-black w-full text-center text-black rounded-[0.5rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300">
+                          <h3 className="font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
                             Our Products
                           </h3>
                         </a>
+
                         <a href="/map">
-                          <h3 className="font-[Tanker] px-[1.7rem] py-[1rem] border-2 border-black w-full text-center text-black rounded-[0.5rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300">
+                          <h3 className="font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
                             Our Locations
                           </h3>
                         </a>
                         <a href="/about">
-                          <h3 className=" font-[Tanker] px-[1.7rem] py-[1rem] border-2 border-black w-full text-center text-black rounded-[0.5rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300">
+                          <h3 className=" font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
                             About Us
                           </h3>
                         </a>
@@ -75,7 +82,7 @@ function Navbar() {
                 )
               }
               // onClick={handleNavBar}
-              className="flex font-[Tanker] px-[1rem] py-[1rem] border-2 border-black w-fit text-black rounded-[0.5rem] gap-[1rem] hover:text-white hover:cursor-pointer hover:bg-[#0D6A3D] ease-in-out duration-300 z-[50]"
+              className="flex text-3xl p-[0.7rem] w-fit text-black gap-[1rem] hover:cursor-pointer hover:underline ease-in-out duration-300 z-[50]"
             >
               {/* <h3>Menu</h3> */}
               <IoIosMenu />

@@ -4,6 +4,13 @@
 
 html {
   background-color: #fef7e6;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -47,7 +54,7 @@ h1 {
   font-family: "Tanker", sans-serif;
   font-weight: 800;
   letter-spacing: 2px;
-  font-size: 6.3rem;
+  font-size: 3.3rem;
   line-height: 5rem;
 }
 
@@ -60,8 +67,8 @@ h2 {
 
 h3 {
   font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.2vrem;
+  font-weight: bold;
+  font-size: 1.2rem;
   letter-spacing: -0.2px;
   font-weight: 0.5;
   line-height: normal;
@@ -83,12 +90,27 @@ li {
 /*  <div className='border border-black w-fit px-[1.5%] py-[0.5%] rounded-full bg-white'>
 */
 
+/* className="whitespace-nowrap px-[3rem] py-[1rem] rounded-[999rem] bg-[#E7D9BF] border border-[#cbba9a] shadow-lg" */
+
 button {
   border-radius: 0.5rem;
-  background-color: wheat;
+  background-color: #e7d9bf;
+  border: 1px solid #cbba9a;
   white-space: nowrap;
   width: 100%;
   padding: 1.5% 1.5%;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  transition: ease-in-out 300ms;
+}
+
+button:hover,
+button:focus {
+  background-color: #0d6a3d;
+  color: white;
+  border: 1px solid #e7d9bf;
+  cursor: pointer;
+  transition: ease-in-out 300ms;
 }
 
 button p {
@@ -144,5 +166,9 @@ button p {
   p {
     font-size: 1rem;
     line-height: normal;
+  }
+
+  button {
+    padding: 0.75rem 1rem;
   }
 }
