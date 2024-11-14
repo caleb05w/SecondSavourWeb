@@ -7,6 +7,7 @@ import Team from "../assets/images/team.png";
 import scroll1 from "../assets/images/scroll1.png";
 import scroll2 from "../assets/images/scroll2.png";
 import scroll3 from "../assets/images/scroll3.png";
+import Darren from "../assets/images/DarrenLauHeadshot.png"
 
 import { FaArrowRight } from "react-icons/fa";
 
@@ -19,9 +20,8 @@ function About() {
         Name={"Darren Lau"}
         Role={"Project Coordinator"}
         Concentration={"SIAT x Beedie"}
-        Image={Caleb}
+        Image={Darren}
         LinkedIn={"https://www.linkedin.com/in/caleb-wu1"}
-        Instagram={"https://www.instagram.com/caleb_wu_/"}
       />
 
       <Profile
@@ -49,7 +49,7 @@ function About() {
       <div className="flex flex-col gap-[5vh] lg:gap-[15vh] min-h-fit  border-5 text-center pt-[9%] w-[90%]">
         <section className="">
           <h1> ABOUT US </h1>
-          <p className="mt-[1%]"> Meet the team behind the dream. </p>
+          <h3 className="mt-[1%]"> Meet the team behind the dream</h3>
         </section>
 
         <section>
@@ -60,8 +60,7 @@ function About() {
                 <h1> MEET OUR TEAM </h1>
                 <p className="">
                   {" "}
-                  Meet the team who's second savour whos seconr savour, boddy
-                  bodyt copy body copy
+                  Our team is a group of passionate individuals committed to delivering innovative solutions and exceptional results. With diverse skills and backgrounds, each member brings unique expertise and dedication to every project. Together, we’re driven by a shared vision to create impactful, user-focused experiences that inspire and empower. Get to know the people behind our success!
                 </p>
               </div>
 
@@ -88,7 +87,6 @@ function About() {
                           Concentration={"SIAT x Beedie"}
                           Image={Caleb}
                           LinkedIn={"https://www.linkedin.com/in/caleb-wu1"}
-                          Instagram={"https://www.instagram.com/caleb_wu_/"}
                         />
 
                         <Profile

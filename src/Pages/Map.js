@@ -9,7 +9,7 @@ return (
                             
                     <div className='m-w-lvw'>
                             <h1> Where to Find Us </h1>
-                            <h3 className='mt-[1%]'> Visit us in person </h3>
+                            <h3 className='mt-[1%]'> Visit us in-person </h3>
                     </div>
 
                     <div className='border-2 border-black w-[100%] h-auto flex flex-cols justify-center'>

@@ -21,9 +21,9 @@ return (
                         <div className='flex flex-col gap-[0.5rem]'>
                                 <h3 className='text-gray-600'>Socials</h3>
                                 <div className='flex flex-col gap-[0.2rem]'>
-                                        <a href='/about'><h3> TikTok</h3></a>
-                                        <a href='/blog'><h3> Linkedin</h3> </a>
-                                        <a href='/about'><h3> Facebook</h3> </a>
+                                        <a href='https://www.instagram.com/second.savour/'><h3> Instagram</h3> </a>
+                                        <a href='https://www.tiktok.com/@second.savour'><h3> TikTok</h3></a>
+                                        <a href='https://www.linkedin.com/company/second-savour'><h3> Linkedin</h3> </a>
                                 </div>
                         </div>
 
