@@ -19,7 +19,6 @@ function About() {
       <Profile
         Name={"Darren Lau"}
         Role={"Project Coordinator"}
-        Concentration={"Beedie"}
         Image={Darren}
         LinkedIn={"https://www.linkedin.com/in/caleb-wu1"}
       />
