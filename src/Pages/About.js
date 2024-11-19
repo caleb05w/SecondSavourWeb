@@ -4,6 +4,7 @@ import Team from "../assets/images/team.png";
 import scroll1 from "../assets/images/scroll1.png";
 import scroll2 from "../assets/images/scroll2.png";
 import scroll3 from "../assets/images/scroll3.png";
+import { FaArrowRight } from "react-icons/fa";
 
 const teamData = {
   sales: [
@@ -78,7 +79,7 @@ const teamData = {
       Name: "Justin Cheung",
       Role: "Chief Executive Officer",
       Concentration: "SFU Beedie",
-      Image: require("../assets/images/Justin.png"),
+      Image: require("../assets/images/Den.png"),
       LinkedIn: "https://www.linkedin.com/in/justinacheung/",
     },
     {
@@ -150,7 +151,13 @@ function About() {
                 <h1> MEET OUR TEAM </h1>
                 <p className="">
                   {" "}
-                  Our team is a group of passionate individuals committed to delivering innovative solutions and exceptional results. With diverse skills and backgrounds, each member brings unique expertise and dedication to every project. Together, we’re driven by a shared vision to create impactful, user-focused experiences that inspire and empower. Get to know the people behind our success!
+                  Our team is a group of passionate individuals committed to
+                  delivering innovative solutions and exceptional results. With
+                  diverse skills and backgrounds, each member brings unique
+                  expertise and dedication to every project. Together, we’re
+                  driven by a shared vision to create impactful, user-focused
+                  experiences that inspire and empower. Get to know the people
+                  behind our success!
                 </p>
               </div>
 

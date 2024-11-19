@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 function Profile({ Name, Role, Image, Concentration, LinkedIn, Instagram }) {
   return (
-    <div className="group flex flex-col overflow-hidden w-[100%] rounded-[0.5rem] flex-1 flex-grow flex-shrink basis-[9rem] lg:h-fit max-h-[50vh] min-w-[0] max-w-[50%] ease-in-out duration-300">
+    <div className="group flex flex-col overflow-hidden w-[100%] rounded-[0.5rem] flex-1 flex-grow flex-shrink basis-[8grem] lg:h-fit max-h-[50vh] min-w-[0] max-w-[50%] ease-in-out duration-300">
       <div className="rounded-[0.5rem] min-h-[100%] relative lg:w-full object-cover">
         <img
           src={Image}
