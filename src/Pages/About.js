@@ -1,53 +1,143 @@
 import React, { useState } from "react";
 import Profile from "../Components/Profile.js";
-import Caleb from "../assets/images/caleb.png";
-import Arianna from "../assets/images/Arianna.png";
-import Jessica from "../assets/images/Jessica.png";
 import Team from "../assets/images/team.png";
 import scroll1 from "../assets/images/scroll1.png";
 import scroll2 from "../assets/images/scroll2.png";
 import scroll3 from "../assets/images/scroll3.png";
 
-import { FaArrowRight } from "react-icons/fa";
+const teamData = {
+  sales: [
+    {
+      Name: "Darren Lau",
+      Role: "Director of Business Development",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Darren.png"),
+      LinkedIn: "https://www.linkedin.com/in/darrennlau/",
+    },
+    {
+      Name: "Gailza Wijaya",
+      Role: "VP Sales",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Gailza.png"),
+      LinkedIn: "https://www.linkedin.com/in/gailzaaridinawijaya/",
+    },
+    {
+      Name: "Michael Gudz",
+      Role: "Sales Coordinator",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Michael.png"),
+      LinkedIn: "https://www.linkedin.com/in/michael-gudz-4136812a7/",
+    },
+    {
+      Name: "Raymond Shen",
+      Role: "Sales Coordinator",
+      Concentration: "UBC Engineering",
+      Image: require("../assets/images/Michael.png"),
+      LinkedIn: "https://www.linkedin.com/in/rayleishen/",
+    },
+  ],
+  marketing: [
+    {
+      Name: "Arianna Ha",
+      Role: "VP Marketing",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Arianna.png"),
+      LinkedIn: "https://www.linkedin.com/in/arianna-ha/",
+    },
+    {
+      Name: "Brandon Sun",
+      Role: "Front End Developer",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Brandon.png"),
+      LinkedIn: "https://www.linkedin.com/in/brandnsun/",
+    },
+    {
+      Name: "Caleb Wu",
+      Role: "Front End Developer",
+      Concentration: "SFU SIAT",
+      Image: require("../assets/images/caleb.png"),
+      LinkedIn: "https://www.linkedin.com/in/caleb-wu1",
+    },
+    {
+      Name: "Faith Leung",
+      Role: "Design Coordinator",
+      Concentration: "SFU SIAT",
+      Image: require("../assets/images/Faith.png"),
+      LinkedIn: "https://www.linkedin.com/in/faith-leung-/",
+    },
+    {
+      Name: "Den Kinanti",
+      Role: "Illustrator",
+      Concentration: "SFU SIAT",
+      Image: require("../assets/images/Den.png"),
+      LinkedIn: "https://www.linkedin.com/in/den-kinanti-9b5741284/",
+    },
+  ],
+  operations: [
+    {
+      Name: "Justin Cheung",
+      Role: "Chief Executive Officer",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Justin.png"),
+      LinkedIn: "https://www.linkedin.com/in/justinacheung/",
+    },
+    {
+      Name: "Naia Wong",
+      Role: "Director of Operations",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Naia.png"),
+      LinkedIn: "https://www.linkedin.com/in/naia-wong/",
+    },
+    {
+      Name: "Jessica Tandibrata",
+      Role: "Events Coordinator",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Jessica.png"),
+      LinkedIn: "https://www.linkedin.com/in/jessicatandibrata/",
+    },
+    {
+      Name: "Lucy Liu",
+      Role: "Operations Coordinator",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Lucy.png"),
+      LinkedIn: "https://www.linkedin.com/in/lucyliuu/",
+    },
+    {
+      Name: "Vinay Aery",
+      Role: "Finance Coordinator",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Vinay.png"),
+      LinkedIn: "https://www.linkedin.com/in/vinayaery/",
+    },
+  ],
+};
 
 function About() {
-  //button code to change the content of team
-
   const [selectImage, setSelectImage] = useState(
     <div className="flex lg:flex-row flex-wrap justify-between w-[100%] gap-[1rem]">
-      <Profile
-        Name={"Darren Lau"}
-        Role={"Project Coordinator"}
-        Concentration={"SIAT x Beedie"}
-        Image={Caleb}
-        LinkedIn={"https://www.linkedin.com/in/caleb-wu1"}
-        Instagram={"https://www.instagram.com/caleb_wu_/"}
-      />
-
-      <Profile
-        Name={"Gailza Wijaya"}
-        Role={"VP Marketing"}
-        Concentration={"Beedie Concentration"}
-        Image={Arianna}
-      />
-
-      <Profile
-        Name={"Jessica Tandibrata"}
-        Role={"Events Coordinator"}
-        Concentration={"Beedie Concentration"}
-        Image={Jessica}
-      />
+      {teamData.operations.map((member, index) => (
+        <Profile key={index} {...member} />
+      ))}
     </div>
   );
 
-  const handleImage = (image) => {
-    setSelectImage(image);
+  const [selectedTeam, setSelectedTeam] = useState("operations");
+
+  const handleImage = (teamType) => {
+    setSelectedTeam(teamType);
+    setSelectImage(
+      <div className="flex lg:flex-row flex-wrap justify-between w-[100%] gap-[1rem]">
+        {teamData[teamType].map((member, index) => (
+          <Profile key={index} {...member} />
+        ))}
+      </div>
+    );
   };
 
   return (
     <div className="w-[100%] bg-[#FEF7E6] flex justify-center overflow-hidden">
-      <div className="flex flex-col gap-[5vh] lg:gap-[15vh] min-h-fit  border-5 text-center pt-[9%] w-[90%]">
-        <section className="">
+      <div className="flex flex-col gap-[5vh] lg:gap-[15vh] min-h-fit border-5 text-center pt-[9%] w-[90%]">
+        <section>
           <h1> ABOUT US </h1>
           <p className="mt-[1%]"> Meet the team behind the dream. </p>
         </section>
@@ -58,123 +148,39 @@ function About() {
               <div className="flex flex-col lg:gap-[0] gap-[1vh]">
                 <p className="text-gray-600"> Aspiring Changemakers</p>
                 <h1> MEET OUR TEAM </h1>
-                <p className="">
-                  {" "}
-                  Meet the team who's second savour whos seconr savour, boddy
-                  bodyt copy body copy
-                </p>
-              </div>
-
-              <div className="lg:flex lg:w-[50%] justify-between hidden ">
-                <h3 className="h-[100%] flex flex-col justify-center text-gray-600">
-                  {" "}
-                  Questions? Reach out
-                </h3>
-                <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
-                  <FaArrowRight size="10px" />
-                </div>
+                <p> Meet the team who's behind Second Savour...</p>
               </div>
             </div>
 
             <div className="flex flex-col justify-between lg:m-0 mt-[1rem]">
-              <div className="flex lg:flex-nowrap md:flex-nowrap flex-wrap overflow-hidden h-[10%] justify-between min-w-fit w-[100%] lg:gap-[2%]  md:gap-[2%] gap-[1vh] mb-[2%]">
+              <div className="flex lg:flex-nowrap md:flex-nowrap flex-wrap overflow-hidden justify-between min-w-fit min-h-fit w-[100%] lg:gap-[2%] md:gap-[2%] gap-[1vh] mb-[2%]">
                 <button
-                  onClick={() =>
-                    handleImage(
-                      <div className="flex flex-row justify-between w-[100%]">
-                        <Profile
-                          Name={"Darren Lau"}
-                          Role={"Project Coordinator"}
-                          Concentration={"SIAT x Beedie"}
-                          Image={Caleb}
-                          LinkedIn={"https://www.linkedin.com/in/caleb-wu1"}
-                          Instagram={"https://www.instagram.com/caleb_wu_/"}
-                        />
-
-                        <Profile
-                          Name={"Gailza Wijaya"}
-                          Role={"VP Marketing"}
-                          Concentration={"Beedie Concentration"}
-                          Image={Arianna}
-                        />
-
-                        <Profile
-                          Name={"Jessica Tandibrata"}
-                          Role={"Events Coordinator"}
-                          Concentration={"Beedie Concentration"}
-                          Image={Jessica}
-                        />
-                      </div>
-                    )
-                  }
+                  onClick={() => handleImage("operations")}
+                  className={`${
+                    selectedTeam === "operations"
+                      ? "bg-[#0d6a3d] text-white"
+                      : ""
+                  }`}
+                >
+                  <p>Operations</p>
+                </button>
+                <button
+                  onClick={() => handleImage("sales")}
+                  className={`${
+                    selectedTeam === "sales" ? "bg-[#0d6a3d] text-white" : ""
+                  }`}
                 >
                   <p>Sales</p>
                 </button>
-
                 <button
-                  onClick={() =>
-                    handleImage(
-                      <div className="flex flex-row justify-between w-[100%]">
-                        <Profile
-                          Name={"Caleb Wu"}
-                          Role={"Project Coordinator"}
-                          Concentration={"SIAT x Beedie"}
-                          Image={Caleb}
-                          LinkedIn={"https://www.linkedin.com/in/caleb-wu1"}
-                          Instagram={"https://www.instagram.com/caleb_wu_/"}
-                        />
-
-                        <Profile
-                          Name={"Arianna Ha"}
-                          Role={"VP Marketing"}
-                          Concentration={"Beedie Concentration"}
-                          Image={Arianna}
-                        />
-
-                        <Profile
-                          Name={"Jessica Tandibrata"}
-                          Role={"Events Coordinator"}
-                          Concentration={"Beedie Concentration"}
-                          Image={Jessica}
-                        />
-                      </div>
-                    )
-                  }
+                  onClick={() => handleImage("marketing")}
+                  className={`${
+                    selectedTeam === "marketing"
+                      ? "bg-[#0d6a3d] text-white"
+                      : ""
+                  }`}
                 >
                   <p>Marketing</p>
-                </button>
-
-                <button
-                  onClick={() =>
-                    handleImage(
-                      <div className="flex flex-row justify-between w-[100%]">
-                        <Profile
-                          Name={"Caleb AAA Wu"}
-                          Role={"Project Coordinator"}
-                          Concentration={"SIAT x Beedie"}
-                          Image={Caleb}
-                          LinkedIn={"https://www.linkedin.com/in/caleb-wu1"}
-                          Instagram={"https://www.instagram.com/caleb_wu_/"}
-                        />
-
-                        <Profile
-                          Name={"Arianna Ha"}
-                          Role={"VP Marketing"}
-                          Concentration={"Beedie Concentration"}
-                          Image={Arianna}
-                        />
-
-                        <Profile
-                          Name={"Jessica Tandibrata"}
-                          Role={"Events Coordinator"}
-                          Concentration={"Beedie Concentration"}
-                          Image={Jessica}
-                        />
-                      </div>
-                    )
-                  }
-                >
-                  <p>Logistics</p>
                 </button>
               </div>
 
