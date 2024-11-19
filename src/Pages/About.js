@@ -139,7 +139,7 @@ function About() {
       <div className="flex flex-col gap-[5vh] lg:gap-[15vh] min-h-fit border-5 text-center pt-[9%] w-[90%]">
         <section>
           <h1> ABOUT US </h1>
-          <p className="mt-[1%]"> Meet the team behind the dream. </p>
+          <h3 className="mt-[1%]"> Meet the team behind the dream</h3>
         </section>
 
         <section>
@@ -148,7 +148,20 @@ function About() {
               <div className="flex flex-col lg:gap-[0] gap-[1vh]">
                 <p className="text-gray-600"> Aspiring Changemakers</p>
                 <h1> MEET OUR TEAM </h1>
-                <p> Meet the team who's behind Second Savour...</p>
+                <p className="">
+                  {" "}
+                  Our team is a group of passionate individuals committed to delivering innovative solutions and exceptional results. With diverse skills and backgrounds, each member brings unique expertise and dedication to every project. Together, we’re driven by a shared vision to create impactful, user-focused experiences that inspire and empower. Get to know the people behind our success!
+                </p>
+              </div>
+
+              <div className="lg:flex lg:w-[50%] justify-between hidden ">
+                <h3 className="h-[100%] flex flex-col justify-center text-gray-600">
+                  {" "}
+                  Questions? Reach out
+                </h3>
+                <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
+                  <FaArrowRight size="10px" />
+                </div>
               </div>
             </div>
 

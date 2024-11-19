@@ -16,9 +16,9 @@ function Home() {
         {/* Header Section */}
         <div className="p-[2%]">
           <h1 className="text-center font-bold">SECOND SAVOUR</h1>
-          <h4 className="text-center mt-[1%]">
-            Body copy, and importing tag linea
-          </h4>
+          <h3 className="text-center mt-[1%]">
+            A social enterprise that aims to combat food waste originating from excess produce
+          </h3>
         </div>
 
         {/* Citrus Candies Section */}
@@ -30,7 +30,7 @@ function Home() {
 
             <h1 className="mt-[2%] font-bold text-white">Citrus Candies</h1>
             <h3 className="mt-[2%] text-2xl font-bold text-white">
-              7.99 Per Package
+              $6.99 Per Package
             </h3>
             <p className="mt-[2%] text-white">
               Nutritious, vitamin-filled, citrus delicacies hand-made from
@@ -99,7 +99,7 @@ function Home() {
 
         <div className="flex">
           <div className="lg:w-[40%]">
-            <h1>Our Products</h1>
+            <h1>Our Story</h1>
             <p className="mt-[5%]">
               Second Savour was founded by a group of friends at Simon Fraser
               University (SFU) with a mission to create environmental change.

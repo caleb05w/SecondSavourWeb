@@ -11,12 +11,12 @@ function Shop() {
       <div className="flex flex-col gap-[3vh] lg:gap-[10vh] min-h-fit border-orange-400 border-5 text-center pt-[7%] w-[90%]">
         <div className="sm:mt-[5vh]">
           <h1> OUR PRODUCTS </h1>
-          <h3 className="mt-[1%]"> Filler filler body </h3>
+          <h3 className="mt-[1%]">Second Savour crafts sustainable, delicious candy by upcycling fruits</h3>
         </div>
         <div className="flex  gap-[3vh] lg:flex-row flex-col width-[100%] mb-[3vh]">
           <Container
-            Title="Citrus Candies"
-            Description="Our delicious citrus candies are made from the finest ingredients. They are perfect for any occasion and are sure to be a hit with your friends and family."
+            Title="Citrus Treats"
+            Description="Our delicious Citrus Treats are made from the finest ingredients. They are perfect for any occasion and are sure to be a hit with your friends and family."
             Image={CitrusCandie}
             BGColor={"#E7D9BF"}
             ButtonText={"View Product"}
