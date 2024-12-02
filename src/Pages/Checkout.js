@@ -41,14 +41,14 @@ function Checkout() {
         <div className=" bg-[#E7D9BF] rounded-[1rem] p-[2rem] md:p-[3rem] lg:p-[3rem] flex flex-col md:min-w-[60%] lg:min-w-[60%] shadow-lg">
           <div className="h-full flex flex-col gap-[1rem] py-[0.5rem]">
             <h1 className=""> Citrus Candies </h1>
-            <h3 className="text-gray-600"> 7.99 Per Package </h3>
+            <h3 className="text-gray-600"> 6.99 Per Package </h3>
             <p>
               Nutritious, vitamin-filled, citrus delicacies hand-made from
               repurposed juiced oranges. Made to enjoy in class, on a drive,
               during study sessions, basically anywhere!
             </p>
           </div>
-          <Button text="Add to Cart" />
+          <Button text="Purchase Now!" clickTo="https://forms.gle/uMxvjKhRKX5Ecjvi9"/>
         </div>
       </div>
 

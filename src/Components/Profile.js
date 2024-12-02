@@ -17,13 +17,12 @@ function Profile({ Name, Role, Image, Concentration, LinkedIn, Instagram }) {
             <p className="font-thin mt-[5%] text-[0.8rem]"> {Role} </p>
             <p className="font-thin text-[0.8rem]"> {Concentration} </p>
             <div className="flex gap-[5%] mt-[5%]">
-              <a href={LinkedIn}>
-                <FaLinkedin
-                  className="hover:cursor-pointer hover:brightness-50 ease-in-out duration-300"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              </a>
+            <a href={LinkedIn} 
+              target="_blank" 
+              rel="noopener noreferrer">
+            <FaLinkedin className="hover:cursor-pointer hover:brightness-50 ease-in-out duration-300" />
+            </a>
+
               <a href={Instagram}>
                 {/* <FaInstagram
                   className="hover:cursor-pointer hover:brightness-50 ease-in-out duration-300"

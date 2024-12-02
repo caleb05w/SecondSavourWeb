@@ -2,12 +2,14 @@ import React from "react";
 import "../output.css";
 import "../input.css"; // Tailwind stylesheet
 import lemonMan from "../assets/lemon_man.png";
+import Team from "../assets/images/team.png"
 import SmallSegment from "../Components/SmallSegment.js";
 import Boxes from "../assets/images/boxes.png";
 import Boothing from "../assets/images/boothing.png";
 import New1 from "../assets/images/NewSticker.png";
 import Packages from "../assets/images/Group742.png";
 import Button from "../Components/Button.js";
+import { FaArrowRight } from "react-icons/fa";
 
 function Home() {
   return (
@@ -97,16 +99,28 @@ function Home() {
         </div>
         <div className="border-t border-gray-300"></div>
 
-        <div className="flex">
-          <div className="lg:w-[40%]">
+        <div className="flex flex-col lg:flex-row">
+          <div className="lg:w-[60%]">
             <h1>Our Story</h1>
             <p className="mt-[5%]">
               Second Savour was founded by a group of friends at Simon Fraser
-              University (SFU) with a mission to create environmental change.
+              University (SFU) in Burnaby, BC, with a mission to create environmental change.
             </p>
-          </div>
+            
+            <a href="https://secondsavour.ca/about" className="flex lg:w-[50%] justify-between mt-[5%]">
+              <h3 className="h-[100%] flex flex-col justify-center text-gray-600">
+                Learn More
+              </h3>
+              <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
+                <FaArrowRight size="10px" />
+              </div>
+            </a>
 
-          <div className="w-[60%]">{/* insert image */}</div>
+          </div>
+        
+          <div className="lg:w-[40%]">
+            <img src={Team} alt="the Second Savour Team at our first social" />
+          </div>
         </div>
 
         <div className="border-t border-gray-300"></div>

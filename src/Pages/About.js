@@ -152,12 +152,11 @@ function About() {
                 <p className="">
                   {" "}
                   Our team is a group of passionate individuals committed to
-                  delivering innovative solutions and exceptional results. With
+                  delivering healthy and sustainable snacks. With
                   diverse skills and backgrounds, each member brings unique
-                  expertise and dedication to every project. Together, we’re
-                  driven by a shared vision to create impactful, user-focused
-                  experiences that inspire and empower. Get to know the people
-                  behind our success!
+                  expertise and dedication to the project. Together, we’re
+                  driven by a shared vision to bring you an amazing treat. 
+                  Get to know the people behind our success!
                 </p>
               </div>
 
@@ -211,7 +210,7 @@ function About() {
 
         <section className="grid grid-rows-1 lg:grid-cols-2 gap-[5%]">
           <div className="text-left flex flex-col gap-[0.5rem]">
-            <h1> WHAT'S SECOND SAVOUR </h1>
+            <h1> WHAT IS SECOND SAVOUR </h1>
             <h3 className="lg:mt-[2rem] mt-[1rem] text-gray-600">
               {" "}
               Aspiring Changemakers{" "}
@@ -223,10 +222,10 @@ function About() {
             </p>
             <h3 className="lg:mt-0 md:mt-0 mt-[1rem] text-gray-600">
               {" "}
-              Aspiring Changemakers{" "}
+              What We Do{" "}
             </h3>
             <p>
-              We aimed to reduce supply chain waste by taking a different
+              We aim to reduce supply chain waste by taking a different
               approach than companies that sell imperfect produce. We want to
               promote the use of the whole product and not leave waste. We do
               not dare to dream about a better world, we dare to enact the
@@ -265,11 +264,11 @@ function About() {
           <div className="text-left flex flex-col lg:flex-row mt-[4%] gap-[2%]">
             <p className="mt-[1rem] lg:mt-0">
               {" "}
-              <h3>Words</h3>At Second Savour, we focus on reducing waste and
+              <h3>Our Mission</h3>At Second Savour, we focus on reducing waste and
               promoting sustainability by utilizing surplus produce. By reducing
               the need for additional resources to create new food, we
               contribute to conserving energy, water, and soil health.
-              Sustainability is more than a goal for us—it's the way we operate
+              Sustainability is more than a goal for us—it's the way we operate.
             </p>
             <p className="mt-[1rem] lg:mt-0">
               {" "}
@@ -278,7 +277,7 @@ function About() {
               socials are more than just events; they're a chance to bond,
               unwind, and celebrate our collective efforts. Join us, and become
               part of a family that values camaraderie as much as our mission to
-              be sustainable
+              be sustainable.
             </p>
           </div>
         </section>
