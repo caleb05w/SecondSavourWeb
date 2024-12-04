@@ -29,13 +29,14 @@ const teamData = {
       Image: require("../assets/images/Michael.png"),
       LinkedIn: "https://www.linkedin.com/in/michael-gudz-4136812a7/",
     },
-    {
-      Name: "Raymond Shen",
-      Role: "Sales Coordinator",
-      Concentration: "UBC Engineering",
-      Image: require("../assets/images/Michael.png"),
-      LinkedIn: "https://www.linkedin.com/in/rayleishen/",
-    },
+        {
+            Name: "Raymond Shen",
+            Role: "Sales Coordinator",
+            Concentration: "UBC Engineering",
+            Image: require("../assets/images/RaymondHeadshot.jpeg"),
+            LinkedIn: "https://www.linkedin.com/in/rayleishen/",
+          },
+
   ],
   marketing: [
     {
@@ -59,27 +60,14 @@ const teamData = {
       Image: require("../assets/images/caleb.png"),
       LinkedIn: "https://www.linkedin.com/in/caleb-wu1",
     },
-    {
-      Name: "Faith Leung",
-      Role: "Design Coordinator",
-      Concentration: "SFU SIAT",
-      Image: require("../assets/images/Faith.png"),
-      LinkedIn: "https://www.linkedin.com/in/faith-leung-/",
-    },
-    {
-      Name: "Den Kinanti",
-      Role: "Illustrator",
-      Concentration: "SFU SIAT",
-      Image: require("../assets/images/Den.png"),
-      LinkedIn: "https://www.linkedin.com/in/den-kinanti-9b5741284/",
-    },
+
   ],
   operations: [
     {
       Name: "Justin Cheung",
       Role: "Chief Executive Officer",
       Concentration: "SFU Beedie",
-      Image: require("../assets/images/Den.png"),
+      Image: require("../assets/images/justinHeadshot.png"),
       LinkedIn: "https://www.linkedin.com/in/justinacheung/",
     },
     {
@@ -96,13 +84,7 @@ const teamData = {
       Image: require("../assets/images/Jessica.png"),
       LinkedIn: "https://www.linkedin.com/in/jessicatandibrata/",
     },
-    {
-      Name: "Lucy Liu",
-      Role: "Operations Coordinator",
-      Concentration: "SFU Beedie",
-      Image: require("../assets/images/Lucy.png"),
-      LinkedIn: "https://www.linkedin.com/in/lucyliuu/",
-    },
+
     {
       Name: "Vinay Aery",
       Role: "Finance Coordinator",

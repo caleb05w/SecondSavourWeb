@@ -130,6 +130,12 @@ function Home() {
           <p className="text-gray-600 text-center mt-[2%]">
             See what people are saying about our products
           </p>
+          <p className="text-center text-gray-800 mt-[5%] font-medium italic">
+            "Second Savour's candies are the perfect blend of flavor and sustainability. I can't get enough of them!"
+          </p>
+          <p className="text-gray-800 text-center mt-[2%]">
+            - Angelina Chen
+          </p>
         </div>
       </div>
     </div>
