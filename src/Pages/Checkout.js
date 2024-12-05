@@ -8,14 +8,12 @@ import Boothing from "../assets/images/boothing.png";
 function Checkout() {
   // State to hold the current text
   const [displayText, setDisplayText] = useState(
-    <div className="">
+    <div>
       <h3 className="text-gray-600 mb-[2%]"> Nutrition </h3>
+      <p>A healthy treat, consisting of fibre, vitamin C, and low calorie count!</p>
+      <h3 className="text-gray-600 mt-[2%] mb-[2%]">Ingredients</h3>
       <p>
-        Nutritious, vitamin-filled, citrus delicacies hand-made from repurposed
-        juiced oranges. Made to enjoy in class, on a drive, during study
-        sessions, basically anywhere! Nutritious, vitamin-filled, citrus
-        delicacies hand-made from repurposed juiced oranges. Made to enjoy in
-        class, on a drive, during study sessions, basically anywhere!
+      Our recipe consists of only THREE ingredients: Orange Peels, Sugar, and Citric Acid.
       </p>
     </div>
   );
@@ -41,7 +39,7 @@ function Checkout() {
         <div className=" bg-[#E7D9BF] rounded-[1rem] p-[2rem] md:p-[3rem] lg:p-[3rem] flex flex-col md:min-w-[60%] lg:min-w-[60%] shadow-lg">
           <div className="h-full flex flex-col gap-[1rem] py-[0.5rem]">
             <h1 className=""> Citrus Candies </h1>
-            <h3 className="text-gray-600"> 6.99 Per Package </h3>
+            <h3 className="text-gray-600"> $6.99 Per Package </h3>
             <p>
               Nutritious, vitamin-filled, citrus delicacies hand-made from
               repurposed juiced oranges. Made to enjoy in class, on a drive,
@@ -52,27 +50,26 @@ function Checkout() {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <div className="border-b-2 border-gray-600 my-[3%]"></div>
-
         <div className="flex justify-between lg:flex-row md:flex-row flex-col">
-          <h2> Product Info</h2>
+          <h2> Product Information</h2>
           <div className="flex flex-row gap-[2%] mt-[2vh] lg:mt-0 md:mt-0 min-w-[50%] md:justify-end lg:justify-end">
             <button
               onClick={() =>
                 handleTextChange(
-                  <div className="">
+                  <div>
                     <h3 className="text-gray-600 mb-[2%]"> Nutrition </h3>
                     <p>
-                      Nutritious, vitamin-filled, citrus delicacies hand-made
-                      from repurposed juiced oranges. Made to enjoy in class, on
-                      a drive, during study sessions, basically anywhere!
-                      Nutritious, vitamin-filled, citrus delicacies hand-made
-                      from repurposed juiced oranges. Made to enjoy in class, on
-                      a drive, during study sessions, basically anywhere!
+                      A healthy treat, consisting of fibre, vitamin C, and low calorie count!
                     </p>
-                  </div>,
-                  "Nutrition"
+                    <h3 className="text-gray-600 mt-[2%] mb-[2%]">Ingredients</h3>
+                    <p>
+                      Our recipe consists of only THREE ingredients: Orange Peels, Sugar, and Citric Acid.
+                    </p>
+                  </div>
+
+                  
                 )
               }
               className={`w-fit rounded-[0.5rem] px-[1rem] py-[0.5rem] hover:cursor-pointer hover:text-white hover:bg-[#0D6A3D] ease-in-out duration-300
@@ -81,42 +78,7 @@ function Checkout() {
               <h3> Nutrition </h3>
             </button>
 
-            <button
-              onClick={() =>
-                handleTextChange(
-                  <div className="flex flex-col gap-[1.3rem]">
-                    <h3 className="text-gray-600"> Ingredients </h3>
 
-                    <div className="flex flex-col gap-[1%]">
-                      <h3 className="text-gray-600">
-                        {" "}
-                        15 droplets of golden sugar{" "}
-                      </h3>
-                      <p>
-                        Nutritious, vitamin-filled, citrus delicacies hand-made
-                        from repurposed juiced oranges. Made to enjoy in class,
-                        on a drive, during study sessions, basically anywhere!
-                      </p>
-                    </div>
-
-                    <div className="flex flex-col gap-[1%]">
-                      <h3 className="text-gray-600"> 10 grams of protein </h3>
-                      <p>
-                        Nutritious, vitamin-filled, citrus delicacies hand-made
-                        from repurposed juiced oranges. Made to enjoy in class,
-                        on a drive, during study sessions, basically anywhere!
-                      </p>
-                    </div>
-                  </div>,
-
-                  "Ingredients"
-                )
-              }
-              className={`w-fit rounded-[0.5rem] px-[1rem] py-[0.5rem] hover:cursor-pointer hover:text-white hover:bg-[#0D6A3D] ease-in-out duration-300
-                                    ${selectedButton === "Ingredients" ? "bg-[#0D6A3D] text-white" : "bg-[#E7D9BF]"}`}
-            >
-              <h3>Ingredients</h3>
-            </button>
             <button
               onClick={() =>
                 handleTextChange(

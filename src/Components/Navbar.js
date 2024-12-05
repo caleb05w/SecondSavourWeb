@@ -48,6 +48,12 @@ function Navbar() {
                   <div className="flex h-full flex-row justify-center w-full f-full">
                     <div className=" w-[100%] flex flex-row justify-center p-[1rem] fixed z-40 top-[20vh]">
                       <div className="flex flex-col gap-[1rem] min-w-[80%] justify-center whitespace-nowrap rounded-[0.5rem] px-[1rem] py-[1rem] bg-[#E7D9BF] shadow-lg">
+                        <a href="/">
+                          <h3 className="font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
+                            Home  
+                          </h3>
+                        </a>
+                        
                         <a href="/shop">
                           <h3 className="font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
                             Our Products

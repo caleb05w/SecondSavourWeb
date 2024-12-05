@@ -141,16 +141,15 @@ function About() {
                   Get to know the people behind our success!
                 </p>
               </div>
-
-              <div className="lg:flex lg:w-[50%] justify-between hidden ">
-                <h3 className="h-[100%] flex flex-col justify-center text-gray-600">
-                  {" "}
-                  Questions? Reach out
-                </h3>
-                <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
-                  <FaArrowRight size="10px" />
-                </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEeZn6Av1vFIMVT2B4yRBemiZWaskyFIAEft18ToZpxbA5bw/viewform?usp=sharing" 
+            className="flex lg:w-[50%] justify-between mt-[5%]">
+              <h3 className="h-[100%] flex flex-col justify-center text-gray-600">
+                Questions? Reach out
+              </h3>
+              <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
+                <FaArrowRight size="10px" />
               </div>
+            </a>
             </div>
 
             <div className="flex flex-col justify-between lg:m-0 mt-[1rem]">
@@ -207,9 +206,8 @@ function About() {
               What We Do{" "}
             </h3>
             <p>
-              We aim to reduce supply chain waste by taking a different
-              approach than companies that sell imperfect produce. We want to
-              promote the use of the whole product and not leave waste. We do
+              We aim to reduce supply chain waste by taking a unique approach, 
+              promoting the use of the whole promote, leaving no waste. We do
               not dare to dream about a better world, we dare to enact the
               change.{" "}
             </p>
@@ -246,7 +244,7 @@ function About() {
           <div className="text-left flex flex-col lg:flex-row mt-[4%] gap-[2%]">
             <p className="mt-[1rem] lg:mt-0">
               {" "}
-              <h3>Our Mission</h3>At Second Savour, we focus on reducing waste and
+              <h3 className="mb-[1%]">Our Mission</h3>We focus on reducing waste and
               promoting sustainability by utilizing surplus produce. By reducing
               the need for additional resources to create new food, we
               contribute to conserving energy, water, and soil health.
@@ -254,7 +252,7 @@ function About() {
             </p>
             <p className="mt-[1rem] lg:mt-0">
               {" "}
-              <h3>Team Bond</h3>At Second Savour, we believe that a strong team
+              <h3 className="mb-[1%]">Team Bond</h3>At Second Savour, we believe that a strong team
               is built on genuine connections and shared experiences. Our team
               socials are more than just events; they're a chance to bond,
               unwind, and celebrate our collective efforts. Join us, and become
