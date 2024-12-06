@@ -1,124 +1,95 @@
 import React, { useState } from "react";
-import { IoIosMenu } from "react-icons/io";
+import { Link, useLocation } from "react-router-dom";
+import Hyperlink from "./Hyperlink";
+
+/* Icons */
+import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
-  const [selectNavbar, setSelectNavbar] = useState();
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleNavBar = (navbar) => {
-    setSelectNavbar(navbar);
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
+
+  //referenced from stack overflow
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path ? "hidden" : "relative";
   };
 
   return (
-    <div className="w-[100%] sm:mt-[2%]">
-      <nav className="bg-transparent w-[100%]  fixed z-20 lg:flex md:flex flex-row justify-center hidden">
-        <div className="flex flex-row w-[70%] justify-between whitespace-nowrap px-[3rem] py-[1rem] rounded-[999rem] bg-[#E7D9BF] border border-[#cbba9a] shadow-lg">
-          <a href="/">
-            <h3 className=" font-[Tanker] w-fit text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
-              Home
-            </h3>
-          </a>
-          <div class=" flex flex-row gap-[1rem] w-fit">
-            <a href="/shop">
-              <h3 className="font-[Tanker] w-fit text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
-                Our Products
-              </h3>
-            </a>
-            <a href="/map">
-              <h3 className="font-[Tanker] w-fit text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
-                Our Locations
-              </h3>
-            </a>
-            <a href="/about">
-              <h3 className=" font-[Tanker] w-fit text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
-                About Us
-              </h3>
-            </a>
-          </div>
-        </div>
-      </nav>
+    <nav className=" mb-[8vh] md:mb-[5vh] lg:mb-[3%] ">
+      <div
+        className=" z-20 flex flex-row justify-between fixed h-[fit] lg:h-[6%] 
+        top-0 left-0 bg---color-black backdrop-blur-[8px]"
+      ></div>
 
-      {/* mobile navbar */}
+      <div className=" flex flex-row justify-center lg:mt-[1%]">
+        <div
+          className={`flex flex-col lg:flex-row justify-between lg:w-[60vw] S w-[100vw] lg:rounded-full h-fit z-30 lg:py-[1%] pb-[6vh] lg:px-[3%] fixed lg:mt-[0%] mt-[-3%] lg:pt-[21] pt-[5%] rounded-[0.5rem]  ease-in-out duration-[500ms]  lg:bg-my-beige  ${
+            isOpen ? "bg-green-700" : "bg-[#fef7e6]"
+          }`}
+        >
+          <div className="flex flex-row lg:w-fit w-full h-fit justify-between lg:relative  fixed lg:px-0 px-[7%]">
+            <div className="flex flex-col justify-center">
+              <Hyperlink
+                Text={"Second Savour"}
+                Link={"/"}
+                Color={"--color-black"}
+                HoverColor={"--purple"}
+                Display={"none"}
+              />
+            </div>
 
-      <nav>
-        <div class="w-100  flex flex-col justify-items-end">
-          <div className="lg:hidden md:hidden flex flex-row justify-center w-fit h-fit fixed pt-[5%] ease-in-out duration-300  z-10">
             <button
-              onClick={() =>
-                handleNavBar(
-                  <div className="flex h-full flex-row justify-center w-full f-full">
-                    <div className=" w-[100%] flex flex-row justify-center p-[1rem] fixed z-40 top-[20vh]">
-                      <div className="flex flex-col gap-[1rem] min-w-[80%] justify-center whitespace-nowrap rounded-[0.5rem] px-[1rem] py-[1rem] bg-[#E7D9BF] shadow-lg">
-                        <a href="/">
-                          <h3 className="font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
-                            Home  
-                          </h3>
-                        </a>
-                        
-                        <a href="/shop">
-                          <h3 className="font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
-                            Our Products
-                          </h3>
-                        </a>
-
-                        <a href="/map">
-                          <h3 className="font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
-                            Our Locations
-                          </h3>
-                        </a>
-                        <a href="/about">
-                          <h3 className=" font-[Tanker] w-full text-center text-black hover:cursor-pointer hover:underline ease-in-out duration-300">
-                            About Us
-                          </h3>
-                        </a>
-                        <button
-                          onClick={() =>
-                            handleNavBar(
-                              // close state
-                              <div className="top-50 ease-in-out duration-300"></div>
-                            )
-                          }
-                        >
-                          <div className="color-black"> Close </div>
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="min-w-[100vw] h-[100%] min-h-[100vh] bg-black fixed top-0 brightness-50 opacity-50 z-20"></div>
-                  </div>
-                )
+              className="lg:hidden lg:bg-transparent lg:w-0 w-fit bg-transparent group-hover:bg-transparent hover:bg-transparent active:bg-transparent"
+              onClick={toggleNavbar}
+              aria-label={
+                isOpen ? "Close navigation menu" : "Open navigation menu"
               }
-              // onClick={handleNavBar}
-              className="flex text-3xl p-[0.7rem] w-fit text-black gap-[1rem] hover:cursor-pointer hover:underline ease-in-out duration-300 z-[50]"
             >
-              {/* <h3>Menu</h3> */}
-              <IoIosMenu />
+              <span
+                className={`text-3xl font-sans lg:hidden bg-transparent font-bold ease-in-out duration-300 h-full mt-[-1vh] flex flex-col justify-center  ${
+                  isOpen ? "text-black" : "text-black"
+                }`}
+              >
+                {isOpen ? "x" : <IoMenu className="w-[10] h-[10] text-4xl" />}
+              </span>
             </button>
           </div>
+          <div
+            className={`flex flex-col lg:flex-row lg:gap-[1rem] gap-[1rem] min-w-[50%] lg:w-[20%]  lg:px-0 px-[7%] lg:mt-0 justify-end z-10 ease-in-out duration-300 ${
+              isOpen ? "mt-[6vh]" : "mt-[-20vh]"
+            }`}
+          >
+            <Hyperlink
+              Text={"About"}
+              Link={"/About"}
+              Color={"--color-black"}
+              HoverColor={"--purple"}
+              Display={"none"}
+            />
+            <Hyperlink
+              Text={"Locations"}
+              Link={"/map"}
+              Color={"--color-black"}
+              HoverColor={"--purple"}
+              Display={"none"}
+            />
+            <Hyperlink
+              Text={"Shop"}
+              Link={"/Shop"}
+              Color={"--color-black"}
+              HoverColor={"--purple"}
+              Display={"none"}
+            />
+          </div>
         </div>
-      </nav>
-
-      {/* create the function to toggle the navbar 
-      const = [navbar, setNavbar] = useState(
-        initial content
-      )
-
-      this allows us to feed the content from [ ] into useState, assigning the relationship
-
-      create another function to toggle the states, toggleing is done through setNavbar, and navbar is the state.
-
-      const handleNavBar = (navbarTemporary (argument)) => {
-        setSelectNavbar(navbarTemporary)
-      } 
-
-      now navbar becomes a holder for the values that are initaited by it from handleNavbar.
-       
-      In this case, handleNavBar is a function that is used to switch the contents of navbar. This is done through setNavbar, which 
-      switches the state of navbar with whatever value is entereded into it
-      
-      thats why when we use button onclick = () we feed it the function handleNavBar ( with the content we wnat show in it here ).*/}
-
-      {selectNavbar}
-    </div>
+        <div className="pb-[3%]"></div>
+      </div>
+    </nav>
   );
 }
 

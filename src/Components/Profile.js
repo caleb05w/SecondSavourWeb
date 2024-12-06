@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 
 function Profile({ Name, Role, Image, LinkedIn, Instagram }) {
   return (
-    <div className="group flex flex-col overflow-hidden w-full rounded-[0.5rem] flex-1 lg:h-fit max-h-[60vh] min-w-0 max-w-[50%] ease-in-out duration-300">
+    <div className="group basis-[20vh] md:basis-[10vw] lg:basis-[10rem] flex-grow-1 flex flex-col overflow-hidden w-full rounded-[0.5rem] flex-1 lg:h-fit max-h-[60vh] min-w-0 lg:max-w-[50%] ease-in-out duration-300">
       {/* Image Container */}
       <div className="relative rounded-[0.5rem] w-full aspect-[4/5] overflow-hidden">
         <img
@@ -15,10 +15,14 @@ function Profile({ Name, Role, Image, LinkedIn, Instagram }) {
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col justify-end w-full h-full p-2 bg-gradient-to-t from-black/60 to-transparent">
           <div className="text-left text-white">
-            <h3 className="text-base font-semibold">{Name}</h3> {/* Slightly smaller text */}
-            <p className="font-thin mt-1 text-sm">{Role}</p> {/* Reduced margin */}
+            <h3 className="text-base font-semibold">{Name}</h3>{" "}
+            {/* Slightly smaller text */}
+            <p className="font-thin mt-1 text-sm">{Role}</p>{" "}
+            {/* Reduced margin */}
             {/* Social Icons */}
-            <div className="flex gap-3 mt-3"> {/* Reduced spacing */}
+            <div className="flex gap-3 mt-3">
+              {" "}
+              {/* Reduced spacing */}
               {LinkedIn && (
                 <a href={LinkedIn} target="_blank" rel="noopener noreferrer">
                   <FaLinkedin className="hover:cursor-pointer hover:brightness-50 ease-in-out duration-300" />

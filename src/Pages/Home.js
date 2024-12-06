@@ -2,7 +2,7 @@ import React from "react";
 import "../output.css";
 import "../input.css"; // Tailwind stylesheet
 import lemonMan from "../assets/lemon_man.png";
-import Team from "../assets/images/team.png"
+import Team from "../assets/images/team.png";
 import SmallSegment from "../Components/SmallSegment.js";
 import Boxes from "../assets/images/boxes.png";
 import Boothing from "../assets/images/boothing.png";
@@ -14,13 +14,24 @@ import { FaArrowRight } from "react-icons/fa";
 function Home() {
   return (
     <div className="w-100% bg-[#FEF7E6] flex justify-center">
-      <div className="flex flex-col gap-[10vh] min-h-fit pt-[7%] w-[90%]">
+      <div className="flex flex-col gap-[10vh] min-h-fit w-[90%]">
         {/* Header Section */}
         <div className="p-[2%]">
           <h1 className="text-center font-bold">SECOND SAVOUR</h1>
           <h3 className="text-center mt-[1%]">
-            A social enterprise that aims to combat food waste originating from excess produce
+            A social enterprise that aims to combat food waste originating from
+            excess produce
           </h3>
+          <div className="w-[30%] mt-[2%] mx-auto">
+            <a href={"https://forms.gle/uMxvjKhRKX5Ecjvi9"}>
+              <button className="flex justify-between rounded-[0.25rem] py-[1rem] px-[2rem] bg-green-800 text-white w-[100%] hover:bg-black hover:text-white hover:left-2 hover:shadow-2xl left-0 relative ease-in-out duration-300">
+                <h3 className="mr-[1rem]"> Sign up for our waitlist! </h3>
+                <div className="min-h-[100%] flex flex-col justify-around">
+                  <FaArrowRight />
+                </div>
+              </button>
+            </a>{" "}
+          </div>
         </div>
 
         {/* Citrus Candies Section */}
@@ -104,10 +115,14 @@ function Home() {
             <h1>Our Story</h1>
             <p className="mt-[5%]">
               Second Savour was founded by a group of friends at Simon Fraser
-              University (SFU) in Burnaby, BC, with a mission to create environmental change.
+              University (SFU) in Burnaby, BC, with a mission to create
+              environmental change.
             </p>
-            
-            <a href="https://secondsavour.ca/about" className="flex lg:w-[50%] justify-between mt-[5%]">
+
+            <a
+              href="https://secondsavour.ca/about"
+              className="flex lg:w-[50%] justify-between mt-[5%]"
+            >
               <h3 className="h-[100%] flex flex-col justify-center text-gray-600">
                 Learn More
               </h3>
@@ -115,9 +130,8 @@ function Home() {
                 <FaArrowRight size="10px" />
               </div>
             </a>
-
           </div>
-        
+
           <div className="lg:w-[40%]">
             <img src={Team} alt="the Second Savour Team at our first social" />
           </div>
@@ -131,11 +145,10 @@ function Home() {
             See what people are saying about our products
           </p>
           <p className="text-center text-gray-800 mt-[5%] font-medium italic">
-            "Second Savour's candies are the perfect blend of flavor and sustainability. I can't get enough of them!"
+            "Second Savour's candies are the perfect blend of flavor and
+            sustainability. I can't get enough of them!"
           </p>
-          <p className="text-gray-800 text-center mt-[2%]">
-            - Angelina Chen
-          </p>
+          <p className="text-gray-800 text-center mt-[2%]">- Angelina Chen</p>
         </div>
       </div>
     </div>

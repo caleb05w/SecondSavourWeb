@@ -8,10 +8,13 @@ import Boxes from "../assets/images/boxes.png";
 function Shop() {
   return (
     <div className="w-[100%] bg-[#FEF7E6] flex justify-center">
-      <div className="flex flex-col gap-[3vh] lg:gap-[10vh] min-h-fit border-orange-400 border-5 text-center pt-[7%] w-[90%]">
+      <div className="flex flex-col gap-[3vh] lg:gap-[10vh] min-h-fit border-orange-400 border-5 text-center  w-[90%]">
         <div className="sm:mt-[5vh]">
           <h1> OUR PRODUCTS </h1>
-          <h3 className="mt-[1%]">Second Savour crafts sustainable, delicious candy by upcycling fruits</h3>
+          <h3 className="mt-[1%]">
+            Second Savour crafts sustainable, delicious candy by upcycling
+            fruits
+          </h3>
         </div>
         <div className="flex  gap-[3vh] lg:flex-row flex-col width-[100%] mb-[3vh]">
           <Container

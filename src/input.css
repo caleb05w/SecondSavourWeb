@@ -2,6 +2,13 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+:root {
+  --color-primary: #f15b40;
+  --color-secondary: #e7d9bf;
+  --color-accent: #0d6a3d;
+  --color-white: #ffffff;
+  --color-black: #000000;
+}
 html {
   background-color: #fef7e6;
   margin: 0;

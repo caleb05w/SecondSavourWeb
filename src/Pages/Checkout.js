@@ -10,10 +10,13 @@ function Checkout() {
   const [displayText, setDisplayText] = useState(
     <div>
       <h3 className="text-gray-600 mb-[2%]"> Nutrition </h3>
-      <p>A healthy treat, consisting of fibre, vitamin C, and low calorie count!</p>
+      <p>
+        A healthy treat, consisting of fibre, vitamin C, and low calorie count!
+      </p>
       <h3 className="text-gray-600 mt-[2%] mb-[2%]">Ingredients</h3>
       <p>
-      Our recipe consists of only THREE ingredients: Orange Peels, Sugar, and Citric Acid.
+        Our recipe consists of only THREE ingredients: Orange Peels, Sugar, and
+        Citric Acid.
       </p>
     </div>
   );
@@ -26,7 +29,7 @@ function Checkout() {
   };
 
   return (
-    <div className=" w-[95%] md:w-[95%] lg:w-[80%] m-auto mt-[15vh] md:mt-[9%] lg:mt-[9%]">
+    <div className=" w-[95%] md:w-[95%] lg:w-[80%] m-auto  md:mt-[9%] lg:mt-[0%]">
       <div className="flex flex-col md:flex-row lg:flex-row gap-[3vh] lg:gap-[1%]">
         <div className="group relative bg-[#0D6A3D] min-w-[40%] lg:max-h-[100%] md:max-h-[100%] max-h-[50vh] lg:h-auto rounded-[1rem] flex justify-center hover:bg-[#17B267] hover:cursor-pointer ease-in-out duration-300 shadow-lg">
           <img
@@ -46,7 +49,10 @@ function Checkout() {
               during study sessions, basically anywhere!
             </p>
           </div>
-          <Button text="Purchase Now!" clickTo="https://forms.gle/uMxvjKhRKX5Ecjvi9"/>
+          <Button
+            text="Purchase Now!"
+            clickTo="https://forms.gle/uMxvjKhRKX5Ecjvi9"
+          />
         </div>
       </div>
 
@@ -61,15 +67,17 @@ function Checkout() {
                   <div>
                     <h3 className="text-gray-600 mb-[2%]"> Nutrition </h3>
                     <p>
-                      A healthy treat, consisting of fibre, vitamin C, and low calorie count!
+                      A healthy treat, consisting of fibre, vitamin C, and low
+                      calorie count!
                     </p>
-                    <h3 className="text-gray-600 mt-[2%] mb-[2%]">Ingredients</h3>
+                    <h3 className="text-gray-600 mt-[2%] mb-[2%]">
+                      Ingredients
+                    </h3>
                     <p>
-                      Our recipe consists of only THREE ingredients: Orange Peels, Sugar, and Citric Acid.
+                      Our recipe consists of only THREE ingredients: Orange
+                      Peels, Sugar, and Citric Acid.
                     </p>
                   </div>
-
-                  
                 )
               }
               className={`w-fit rounded-[0.5rem] px-[1rem] py-[0.5rem] hover:cursor-pointer hover:text-white hover:bg-[#0D6A3D] ease-in-out duration-300
@@ -77,7 +85,6 @@ function Checkout() {
             >
               <h3> Nutrition </h3>
             </button>
-
 
             <button
               onClick={() =>

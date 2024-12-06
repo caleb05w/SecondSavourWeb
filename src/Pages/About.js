@@ -29,14 +29,13 @@ const teamData = {
       Image: require("../assets/images/Michael.png"),
       LinkedIn: "https://www.linkedin.com/in/michael-gudz-4136812a7/",
     },
-        {
-            Name: "Raymond Shen",
-            Role: "Sales Coordinator",
-            Concentration: "UBC Engineering",
-            Image: require("../assets/images/RaymondHeadshot.jpeg"),
-            LinkedIn: "https://www.linkedin.com/in/rayleishen/",
-          },
-
+    {
+      Name: "Raymond Shen",
+      Role: "Sales Coordinator",
+      Concentration: "UBC Engineering",
+      Image: require("../assets/images/RaymondHeadshot.jpeg"),
+      LinkedIn: "https://www.linkedin.com/in/rayleishen/",
+    },
   ],
   marketing: [
     {
@@ -60,16 +59,8 @@ const teamData = {
       Image: require("../assets/images/caleb.png"),
       LinkedIn: "https://www.linkedin.com/in/caleb-wu1",
     },
-
   ],
   operations: [
-    {
-      Name: "Justin Cheung",
-      Role: "Chief Executive Officer",
-      Concentration: "SFU Beedie",
-      Image: require("../assets/images/justinHeadshot.png"),
-      LinkedIn: "https://www.linkedin.com/in/justinacheung/",
-    },
     {
       Name: "Naia Wong",
       Role: "Director of Operations",
@@ -92,12 +83,27 @@ const teamData = {
       Image: require("../assets/images/Vinay.png"),
       LinkedIn: "https://www.linkedin.com/in/vinayaery/",
     },
+
+    {
+      Name: "Lucy Liu",
+      Role: "Operations Coordinator",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/Lucy.png"),
+      LinkedIn: "https://www.linkedin.com/in/lucyliuu/",
+    },
+    {
+      Name: "Justin Cheung",
+      Role: "Chief Executive Officer",
+      Concentration: "SFU Beedie",
+      Image: require("../assets/images/justinHeadshot.png"),
+      LinkedIn: "https://www.linkedin.com/in/justinacheung/",
+    },
   ],
 };
 
 function About() {
   const [selectImage, setSelectImage] = useState(
-    <div className="flex lg:flex-row flex-wrap justify-between w-[100%] gap-[1rem]">
+    <div className="flex lg:flex-row border-2 min-w-[50v%] lg:min-w-fit flex-wrap justify-between w-[100%] lg:gap-[1rem] gap-[2.5vw]">
       {teamData.operations.map((member, index) => (
         <Profile key={index} {...member} />
       ))}
@@ -109,7 +115,7 @@ function About() {
   const handleImage = (teamType) => {
     setSelectedTeam(teamType);
     setSelectImage(
-      <div className="flex lg:flex-row flex-wrap justify-between w-[100%] gap-[1rem]">
+      <div className="flex lg:flex-row border-2 min-w-[50v%] lg:min-w-fit flex-wrap justify-between w-[100%] lg:gap-[1rem] gap-[2.5vw]">
         {teamData[teamType].map((member, index) => (
           <Profile key={index} {...member} />
         ))}
@@ -119,7 +125,7 @@ function About() {
 
   return (
     <div className="w-[100%] bg-[#FEF7E6] flex justify-center overflow-hidden">
-      <div className="flex flex-col gap-[5vh] lg:gap-[15vh] min-h-fit border-5 text-center pt-[9%] w-[90%]">
+      <div className="flex flex-col gap-[5vh] lg:gap-[15vh] min-h-fit border-5 text-center w-[90%]">
         <section>
           <h1> ABOUT US </h1>
           <h3 className="mt-[1%]"> Meet the team behind the dream</h3>
@@ -134,22 +140,24 @@ function About() {
                 <p className="">
                   {" "}
                   Our team is a group of passionate individuals committed to
-                  delivering healthy and sustainable snacks. With
-                  diverse skills and backgrounds, each member brings unique
-                  expertise and dedication to the project. Together, we’re
-                  driven by a shared vision to bring you an amazing treat. 
-                  Get to know the people behind our success!
+                  delivering healthy and sustainable snacks. With diverse skills
+                  and backgrounds, each member brings unique expertise and
+                  dedication to the project. Together, we’re driven by a shared
+                  vision to bring you an amazing treat. Get to know the people
+                  behind our success!
                 </p>
               </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEeZn6Av1vFIMVT2B4yRBemiZWaskyFIAEft18ToZpxbA5bw/viewform?usp=sharing" 
-            className="flex lg:w-[50%] justify-between mt-[5%]">
-              <h3 className="h-[100%] flex flex-col justify-center text-gray-600">
-                Questions? Reach out
-              </h3>
-              <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
-                <FaArrowRight size="10px" />
-              </div>
-            </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfEeZn6Av1vFIMVT2B4yRBemiZWaskyFIAEft18ToZpxbA5bw/viewform?usp=sharing"
+                className="flex lg:w-[50%] justify-between mt-[5%]"
+              >
+                <h3 className="h-[100%] flex flex-col justify-center text-gray-600">
+                  Questions? Reach out
+                </h3>
+                <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
+                  <FaArrowRight size="10px" />
+                </div>
+              </a>
             </div>
 
             <div className="flex flex-col justify-between lg:m-0 mt-[1rem]">
@@ -206,7 +214,7 @@ function About() {
               What We Do{" "}
             </h3>
             <p>
-              We aim to reduce supply chain waste by taking a unique approach, 
+              We aim to reduce supply chain waste by taking a unique approach,
               promoting the use of the whole promote, leaving no waste. We do
               not dare to dream about a better world, we dare to enact the
               change.{" "}
@@ -244,20 +252,20 @@ function About() {
           <div className="text-left flex flex-col lg:flex-row mt-[4%] gap-[2%]">
             <p className="mt-[1rem] lg:mt-0">
               {" "}
-              <h3 className="mb-[1%]">Our Mission</h3>We focus on reducing waste and
-              promoting sustainability by utilizing surplus produce. By reducing
-              the need for additional resources to create new food, we
+              <h3 className="mb-[1%]">Our Mission</h3>We focus on reducing waste
+              and promoting sustainability by utilizing surplus produce. By
+              reducing the need for additional resources to create new food, we
               contribute to conserving energy, water, and soil health.
               Sustainability is more than a goal for us—it's the way we operate.
             </p>
             <p className="mt-[1rem] lg:mt-0">
               {" "}
-              <h3 className="mb-[1%]">Team Bond</h3>At Second Savour, we believe that a strong team
-              is built on genuine connections and shared experiences. Our team
-              socials are more than just events; they're a chance to bond,
-              unwind, and celebrate our collective efforts. Join us, and become
-              part of a family that values camaraderie as much as our mission to
-              be sustainable.
+              <h3 className="mb-[1%]">Team Bond</h3>At Second Savour, we believe
+              that a strong team is built on genuine connections and shared
+              experiences. Our team socials are more than just events; they're a
+              chance to bond, unwind, and celebrate our collective efforts. Join
+              us, and become part of a family that values camaraderie as much as
+              our mission to be sustainable.
             </p>
           </div>
         </section>

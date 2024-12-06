@@ -6,7 +6,7 @@ export default function Impacts() {
   return (
     <div>
       <div className="w-100% bg-[#FEF7E6] flex justify-center">
-        <div className="flex flex-col gap-[10vh] min-h-fit pt-[10%] w-[90%]">
+        <div className="flex flex-col gap-[10vh] min-h-fit w-[90%]">
           {/* Header Section */}
           <div className="p-[2%]">
             <h1 className="text-center font-bold">CURRENT IMPACTS</h1>
@@ -23,21 +23,27 @@ export default function Impacts() {
                 stars
               </h5>
             </div>
-        {/* Stats Section */}
-        <div className="mt-[2%] flex flex-col justify-between lg:flex-row">
-          <div className="lg:w-[30%] p-[3%]">
-            <h1 className="font-bold">44 kg+</h1>
-            <p className="mt-[3%]">Of surplus and imperfect produce saved from waste last month</p>
-          </div>
-          <div className="lg:w-[30%] p-[3%]">
-            <h1 className="font-bold">100+</h1>
-            <p className="mt-[3%]">Packages donated last year to raise awareness</p>
-          </div>
-          <div className="lg:w-[30%] p-[3%]">
-            <h1 className="font-bold">200+</h1>
-            <p className="mt-[3%]">Packages donated in the last year to raise awareness</p>
-          </div>
-        </div>
+            {/* Stats Section */}
+            <div className="mt-[2%] flex flex-col justify-between lg:flex-row">
+              <div className="lg:w-[30%] p-[3%]">
+                <h1 className="font-bold">44 kg+</h1>
+                <p className="mt-[3%]">
+                  Of surplus and imperfect produce saved from waste last month
+                </p>
+              </div>
+              <div className="lg:w-[30%] p-[3%]">
+                <h1 className="font-bold">100+</h1>
+                <p className="mt-[3%]">
+                  Packages donated last year to raise awareness
+                </p>
+              </div>
+              <div className="lg:w-[30%] p-[3%]">
+                <h1 className="font-bold">200+</h1>
+                <p className="mt-[3%]">
+                  Packages donated in the last year to raise awareness
+                </p>
+              </div>
+            </div>
           </div>
 
           <div className="mt-[2%] flex">
@@ -102,9 +108,6 @@ export default function Impacts() {
               <h1>PROJECTED FUTURE IMPACTS</h1>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </div>
