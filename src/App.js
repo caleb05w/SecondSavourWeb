@@ -16,6 +16,7 @@ function App() {
         <AnimatedRoutes />
         <Footer />
       </Router>
+      <Analytics />
     </div>
   );
 }
