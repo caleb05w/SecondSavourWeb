@@ -103,7 +103,7 @@ const teamData = {
 
 function About() {
   const [selectImage, setSelectImage] = useState(
-    <div className="flex lg:flex-row border-2 min-w-[50v%] lg:min-w-fit flex-wrap justify-between w-[100%] lg:gap-[1rem] gap-[2.5vw]">
+    <div className="flex lg:flex-row  min-w-[50v%] lg:min-w-fit flex-wrap justify-between w-[100%] lg:gap-[1rem] gap-[2.5vw]">
       {teamData.operations.map((member, index) => (
         <Profile key={index} {...member} />
       ))}
@@ -115,7 +115,7 @@ function About() {
   const handleImage = (teamType) => {
     setSelectedTeam(teamType);
     setSelectImage(
-      <div className="flex lg:flex-row border-2 min-w-[50v%] lg:min-w-fit flex-wrap justify-between w-[100%] lg:gap-[1rem] gap-[2.5vw]">
+      <div className="flex lg:flex-row  min-w-[50v%] lg:min-w-fit flex-wrap justify-between w-[100%] lg:gap-[1rem] gap-[2.5vw]">
         {teamData[teamType].map((member, index) => (
           <Profile key={index} {...member} />
         ))}
@@ -132,9 +132,9 @@ function About() {
         </section>
 
         <section>
-          <div className="flex justify-between flex-col lg:flex-row md:flex-row w-[100%] gap-[5%]">
-            <div className="text-left max-w-full lg:max-w-[40%] flex flex-col justify-between ">
-              <div className="flex flex-col lg:gap-[0] gap-[1vh]">
+          <div className="flex justify-between flex-col  w-[100%] gap-[5%]">
+            <div className="text-left max-w-full  flex flex-col justify-between ">
+              {/* <div className="flex flex-col lg:gap-[1rem] gap-[1vh]">
                 <p className="text-gray-600"> Aspiring Changemakers</p>
                 <h1> MEET OUR TEAM </h1>
                 <p className="">
@@ -146,8 +146,8 @@ function About() {
                   vision to bring you an amazing treat. Get to know the people
                   behind our success!
                 </p>
-              </div>
-              <a
+              </div> */}
+              {/* <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfEeZn6Av1vFIMVT2B4yRBemiZWaskyFIAEft18ToZpxbA5bw/viewform?usp=sharing"
                 className="flex lg:w-[50%] justify-between mt-[5%]"
               >
@@ -157,10 +157,10 @@ function About() {
                 <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
                   <FaArrowRight size="10px" />
                 </div>
-              </a>
+              </a> */}
             </div>
 
-            <div className="flex flex-col justify-between lg:m-0 mt-[1rem]">
+            <div className="flex flex-col justify-between">
               <div className="flex lg:flex-nowrap md:flex-nowrap flex-wrap overflow-hidden justify-between min-w-fit min-h-fit w-[100%] lg:gap-[2%] md:gap-[2%] gap-[1vh] mb-[2%]">
                 <button
                   onClick={() => handleImage("operations")}

@@ -16,17 +16,24 @@ function Home() {
     <div className="w-100% bg-[#FEF7E6] flex justify-center">
       <div className="flex flex-col gap-[10vh] min-h-fit w-[90%]">
         {/* Header Section */}
-        <div className="p-[2%]">
+        <div className="p-[2%] flex flex-col lg:gap-0 gap-[1rem]">
           <h1 className="text-center font-bold">SECOND SAVOUR</h1>
           <h3 className="text-center mt-[1%]">
             A social enterprise that aims to combat food waste originating from
             excess produce
           </h3>
-          <div className="w-[30%] mt-[2%] mx-auto">
+          <div className="lg:w-[30%] w-fit mt-[2%] mx-auto">
             <a href={"https://forms.gle/uMxvjKhRKX5Ecjvi9"}>
-              <button className="flex justify-between rounded-[0.25rem] py-[1rem] px-[2rem] bg-green-800 text-white w-[100%] hover:bg-black hover:text-white hover:left-2 hover:shadow-2xl left-0 relative ease-in-out duration-300">
-                <h3 className="mr-[1rem]"> Sign up for our waitlist! </h3>
-                <div className="min-h-[100%] flex flex-col justify-around">
+              <button className="flex justify-between rounded-[0.25rem] py-[1rem] px-[2rem] bg-green-800 text-white w-fit hover:bg-black hover:text-white hover:left-2 hover:shadow-2xl left-0 relative ease-in-out duration-300">
+                <h3 className="mr-[1rem] hidden lg:flex w-fit">
+                  {" "}
+                  Sign up for our waitlist!{" "}
+                </h3>
+                <h3 className="mr-[1rem] relative lg:hidden">
+                  {" "}
+                  Join the waitlist!{" "}
+                </h3>
+                <div className="min-h-[100%] flex flex-col justify-around w-fit">
                   <FaArrowRight />
                 </div>
               </button>

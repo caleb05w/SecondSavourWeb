@@ -32,7 +32,7 @@ function Navbar() {
             isOpen ? "bg-green-700" : "bg-[#fef7e6]"
           }`}
         >
-          <div className="flex flex-row lg:w-fit w-full h-fit justify-between lg:relative  fixed lg:px-0 px-[7%]">
+          <div className="flex flex-row lg:w-fit w-full h-fit justify-between lg:relative  fixed lg:px-0  pr-[1%] pl-[5%]">
             <div className="flex flex-col justify-center">
               <Hyperlink
                 Text={"Second Savour"}
