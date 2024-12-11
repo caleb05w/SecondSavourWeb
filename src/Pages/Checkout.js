@@ -51,7 +51,7 @@ function Checkout() {
           </div>
           <Button
             text="Purchase Now!"
-            clickTo="https://forms.gle/uMxvjKhRKX5Ecjvi9"
+            clickTo="https://payments.secondsavour.ca/"
           />
         </div>
       </div>

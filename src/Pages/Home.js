@@ -23,11 +23,11 @@ function Home() {
             excess produce
           </h3>
           <div className="w-fit mt-[2%] mx-auto ">
-            <a href={"https://forms.gle/uMxvjKhRKX5Ecjvi9"}>
+            <a href={"https://payments.secondsavour.ca/"}>
               <button className="flex justify-between rounded-[0.25rem] py-[1rem] px-[2rem] bg-green-800 text-white w-fit hover:bg-black hover:text-white hover:left-2 hover:shadow-2xl left-0 relative ease-in-out duration-300">
                 <h3 className="mr-[1rem] hidden lg:flex w-full">
                   {" "}
-                  Sign up for our waitlist!{" "}
+                  Purchase now!{" "}
                 </h3>
                 <h3 className="mr-[1rem] relative lg:hidden">
                   {" "}
