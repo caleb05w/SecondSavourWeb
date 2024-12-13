@@ -7,6 +7,7 @@ import SmallSegment from "../Components/SmallSegment.js";
 import Boxes from "../assets/images/boxes.png";
 import Boothing from "../assets/images/boothing.png";
 import New1 from "../assets/images/NewSticker.png";
+import Pouch from "../assets/images/Citrus Treats Image.png"
 import Packages from "../assets/images/Group742.png";
 import Button from "../Components/Button.js";
 import { FaArrowRight } from "react-icons/fa";
@@ -19,20 +20,17 @@ function Home() {
         <div className="p-[2%] flex flex-col lg:gap-0 gap-[1rem]">
           <h1 className="text-center font-bold">SECOND SAVOUR</h1>
           <h3 className="text-center mt-[1%]">
-            A social enterprise that aims to combat food waste originating from
+            A student-led company that aims to combat food waste originating from
             excess produce
           </h3>
           <div className="w-fit mt-[2%] mx-auto ">
             <a href={"https://payments.secondsavour.ca/"}>
               <button className="flex justify-between rounded-[0.25rem] py-[1rem] px-[2rem] bg-green-800 text-white w-fit hover:bg-black hover:text-white hover:left-2 hover:shadow-2xl left-0 relative ease-in-out duration-300">
-                <h3 className="mr-[1rem] hidden lg:flex w-full">
+                <h3 className="mr-[1rem] lg:flex w-full">
                   {" "}
                   Purchase now!{" "}
                 </h3>
-                <h3 className="mr-[1rem] relative lg:hidden">
-                  {" "}
-                  Join the waitlist!{" "}
-                </h3>
+
                 <div className="min-h-[100%] flex flex-col justify-around w-full">
                   <FaArrowRight />
                 </div>
@@ -42,10 +40,10 @@ function Home() {
         </div>
 
         {/* Citrus Candies Section */}
-        <div className="mt-[2%] p-[2%] bg-green-800 flex flex-col border-2 rounded-2xl lg:flex-row md:flex-row">
-          <div className="text-center lg:w-[40%]">
-            <div className="flex justify-center">
-              <img src={New1} />
+        <div className="mt-[2%] p-[5%] bg-green-800 flex flex-col border-2 rounded-2xl lg:flex-row md:flex-row">
+          <div className="justify-center lg:w-[60%]">
+            <div className="flex justify-left">
+              <img src={New1} className="hidden lg:block" />
             </div>
 
             <h1 className="mt-[2%] font-bold text-white">Citrus Candies</h1>
@@ -58,13 +56,13 @@ function Home() {
               during study sessions - basically anywhere!
             </p>
 
-            <div className="mt-[4%]">
+            <div className="mt-[10%] mb-[10%] flex justify-left lg:mb-[1%]">
               <Button text={"Check it out!"} clickTo={"/Shop"} />
             </div>
           </div>
 
-          <div className="mt-[3%] flex justify-center lg:mt-0 lg:w-[60%]">
-            <img src={Packages} alt="Packages" className="max-w-full" />
+          <div className="mt-[3%] flex justify-center lg:mt-0 lg:w-[40%]">
+            <img src={Pouch} alt="Packages" className="max-w-full" />
           </div>
         </div>
 

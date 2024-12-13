@@ -3,6 +3,7 @@ import CitrusCandies from "../assets/images/CitrusCandie.png";
 import Button from "../Components/Button.js";
 import SmallSegment from "../Components/SmallSegment.js";
 import Boxes from "../assets/images/boxes.png";
+import Pouch from "../assets/images/Stand-Up Pouch Bag Mockup label.png"
 import Boothing from "../assets/images/boothing.png";
 
 function Checkout() {
@@ -34,7 +35,7 @@ function Checkout() {
         <div className="group relative bg-[#0D6A3D] min-w-[40%] lg:max-h-[100%] md:max-h-[100%] max-h-[50vh] lg:h-auto rounded-[1rem] flex justify-center hover:bg-[#17B267] hover:cursor-pointer ease-in-out duration-300 shadow-lg">
           <img
             className="py-[5vw] px-[8vw] relative lg:object-contain object-scale-down top-3 group-hover:top-0 ease-in-out duration-300"
-            src={CitrusCandies}
+            src={Pouch}
             alt="Our Delicious Product Citrus Candies"
           ></img>
         </div>
