@@ -18,7 +18,7 @@ function Footer() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSfEeZn6Av1vFIMVT2B4yRBemiZWaskyFIAEft18ToZpxbA5bw/viewform?usp=sharing"
                 target="_blank"
               >
-                <h3> Contact Us</h3> target="_blank"
+                <h3> Contact Us</h3>
               </a>
             </div>
           </div>
