@@ -14,8 +14,11 @@ function Footer() {
                 <h3> About Us</h3>
               </a>
               {/* <a href='/blog'><h3> Our Blog</h3> </a> */}
-              <a href="/about">
-                <h3> Contact Us</h3>{" "}
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfEeZn6Av1vFIMVT2B4yRBemiZWaskyFIAEft18ToZpxbA5bw/viewform?usp=sharing"
+                target="_blank"
+              >
+                <h3> Contact Us</h3> target="_blank"
               </a>
             </div>
           </div>

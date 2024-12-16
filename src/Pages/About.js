@@ -219,6 +219,19 @@ function About() {
               not dare to dream about a better world, we dare to enact the
               change.{" "}
             </p>
+
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfEeZn6Av1vFIMVT2B4yRBemiZWaskyFIAEft18ToZpxbA5bw/viewform?usp=sharing"
+              className="flex lg:w-[50%] justify-between mt-[5%]"
+              target="_blank"
+            >
+              <h3 className="h-[100%] flex flex-col justify-center text-gray-600 hover:text-[#0D6A3D] hover:cursor-pointer ease-in-out duration-300">
+                Questions? Reach out
+              </h3>
+              <div className="flex flex-col justify-center p-[0.755rem] bg-[#0D6A3D] rounded-[0.25rem] text-white">
+                <FaArrowRight size="10px" />
+              </div>
+            </a>
           </div>
 
           <div className="scale-[1] hover:scale-[1.1] ease-in-out duration-300">
