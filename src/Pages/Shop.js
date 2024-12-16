@@ -4,6 +4,7 @@ import Container from "../Components/Container.js";
 import Segment from "../Components/Segment.js";
 import Boothing from "../assets/images/boothing.png";
 import Boxes from "../assets/images/boxes.png";
+import Pouch from "../assets/images/Stand-Up Pouch Bag Mockup label.png"
 
 function Shop() {
   return (
@@ -20,7 +21,7 @@ function Shop() {
           <Container
             Title="Citrus Treats"
             Description="Our delicious Citrus Treats are made from the finest ingredients. They are perfect for any occasion and are sure to be a hit with your friends and family."
-            Image={CitrusCandie}
+            Image={Pouch}
             BGColor={"#E7D9BF"}
             ButtonText={"View Product"}
             clickTo={"/Checkout"}
